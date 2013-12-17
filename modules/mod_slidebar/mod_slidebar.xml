@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+	<name>SlideBar</name>
+	<author>Adam Kempenich, MarcoFolio</author>
+	<authorEmail>adam@coder12.com</authorEmail>
+	<authorUrl>http://coder12.com</authorUrl>
+	<copyright>MOD_SLIDEBAR_COPYRIGHTTEXT</copyright>	
+	<creationDate>2012</creationDate>
+	<license>GPLv2</license>
+	<version>2.2</version>
+	<description>MOD_SLIDEBAR_DESCRIPTIONTEXT</description>
+    <files>
+		<folder>libraries</folder>
+		<folder>scripts</folder>
+		<folder>templates</folder>
+		<filename module="mod_slidebar">mod_slidebar.php</filename>
+		<filename module="mod_slidebar">index.html</filename>
+	</files>
+		
+		<languages>
+   			<language tag="en-GB">language/en-GB.mod_slidebar.ini</language>
+   			<language tag="en-GB">language/en-GB.mod_slidebar.sys.ini</language>
+		</languages>
+
+	<config>
+	
+	<fields name="params"><fieldset name="basic" label="Configure SlideBar">
+
+		<field name="loadmodule" type="text" default="slidebar" label="MOD_SLIDEBAR_LOADMODULELABEL" description="MOD_SLIDEBAR_LOADMODULEDESCRIPTION" />
+		
+		<field name="jslibrary" type="radio" default="slidebar-j" label="MOD_SLIDEBAR_JSLIBRARYLABEL" description="MOD_SLIDEBAR_JSLIBRARYDESCRIPTION">
+ 			 <option value="slidebar-j">MOD_SLIDEBAR_JQUERY</option>
+ 			 <option value="slidebar-m">MOD_SLIDEBAR_MOOTOOLS</option>
+ 			 <option value="slidebar-p">MOD_SLIDEBAR_PROTOTYPE</option>
+		</field>
+		
+		<field name="loadlibraries" type="radio" default="1" label="MOD_SLIDEBAR_LOADLIBRARIES" description="MOD_SLIDEBAR_LOADLIBRARIESDESCRIPTION">
+ 			 <option value="0">MOD_SLIDEBAR_NO</option>
+ 			 <option value="1">MOD_SLIDEBAR_YES</option>
+		</field>
+		
+		<field name="autoopen" type="radio" default="0" label="MOD_SLIDEBAR_AUTOOPENLABEL" description="MOD_SLIDEBAR_AUTOOPENDESCRIPTION">
+ 			 <option value="0">MOD_SLIDEBAR_BARCLOSED</option>
+ 			 <option value="1">MOD_SLIDEBAR_BAROPENED</option>
+		</field>
+		
+		
+		<field type="spacer" name="blankspace" hr="true"/>
+		<field type="spacer" name="myspacer" label="MOD_SLIDEBAR_SHADOWSETTINGSLABEL" />
+		<!-- Section dedicated to shadows-->
+		<field name="shadowradius" type="text" default="5" label="MOD_SLIDEBAR_SHADOWRADIUSLABEL" description="MOD_SLIDEBAR_SHADOWRADIUSDESCRIPTION" />
+		<field name="shadowx" type="text" default="0" label="MOD_SLIDEBAR_SHADOWXLABEL" description="MOD_SLIDEBAR_SHADOWXDESCRIPTION" />
+		<field name="shadowy" type="text" default="0" label="MOD_SLIDEBAR_SHADOWYLABEL" description="MOD_SLIDEBAR_SHADOWYDESCRIPTION" />
+		<field name="shadowspread" type="text" default="0" label="MOD_SLIDEBAR_SHADOWSPREADLABEL" description="MOD_SLIDEBAR_SHADOWSPREADDESCRIPTION" />
+		<field name="shadowcolor" type="text" default="rgba(0,0,0,1)" label="MOD_SLIDEBAR_SHADOWCOLORLABEL" description="MOD_SLIDEBAR_SHADOWCOLORDESCRIPTION" />
+
+
+		<field type="spacer" name="blankspace1" hr="true"/>
+		<field type="spacer" name="myspacer1" label="MOD_SLIDEBAR_BOXSETTINGSLABEL" />
+		<field name="toppos" type="text" default="140" label="MOD_SLIDEBAR_TOPPOSLABEL" description="MOD_SLIDEBAR_TOPPOSDESCRIPTION" />
+		
+		<field name="pos" type="list" default="left" label="MOD_SLIDEBAR_POSITIONLABEL" description="MOD_SLIDEBAR_POSITIONDESCRIPTION">
+			<option value="left">MOD_SLIDEBAR_LEFT</option>
+			<option value="right">MOD_SLIDEBAR_RIGHT</option>
+		</field>		
+
+		<!--<field name="opacity" type="text" default="1.0" label="MOD_SLIDEBAR_OPACITY" description="MOD_SLIDEBAR_OPACITYDESCRIPTION" />-->
+		<field name="concolor" type="text" default="rgba(221,221,221,1)" label="MOD_SLIDEBAR_CONCOLORLABEL" description="MOD_SLIDEBAR_CONCOLORDESCRIPTION" />
+		<field name="concolorgrad1" type="text" default="rgba(190,190,190,0.8)" label="MOD_SLIDEBAR_CONCOLORGRAD1LABEL" description="MOD_SLIDEBAR_CONCOLORGRAD1DESCRIPTION" />
+		<field name="concolorgrad2" type="text" default="rgba(221,221,221,1)" label="MOD_SLIDEBAR_CONCOLORGRAD2LABEL" description="MOD_SLIDEBAR_CONCOLORGRAD2DESCRIPTION" />
+	
+		<field name="cornerradius" type="text" default="15" label="MOD_SLIDEBAR_CORNERRADIUSLABEL" description="MOD_SLIDEBAR_CORNERRADIUSDESCRIPTION" />
+		<field name="autosizing" type="list" default="on" label="MOD_SLIDEBAR_AUTOSIZINGLABEL" description="MOD_SLIDEBAR_AUTOSIZINGDESCRIPTION">
+			<option value="On">MOD_SLIDEBAR_ON</option>
+			<option value="Off">MOD_SLIDEBAR_OFF</option>
+		</field>
+		<field name="conwidth" type="text" default="200" label="MOD_SLIDEBAR_CONWIDTHLABEL" description="MOD_SLIDEBAR_CONWIDTHDESCRIPTION" />
+		<field name="conheight" type="text" default="320" label="MOD_SLIDEBAR_CONHEIGHTLABEL" description="MOD_SLIDEBAR_CONHEIGHTDESCRIPTION" />
+
+		<field type="spacer" name="myspacer" label="MOD_SLIDEBAR_PADDINGSETTINGSLABEL" />
+		<field name="conpaddingleft" type="text" default="10" label="MOD_SLIDEBAR_CONPADDINGLEFTLABEL" description="MOD_SLIDEBAR_CONPADDINGLEFTDESCRIPTION" />
+		<field name="conpaddingright" type="text" default="10" label="MOD_SLIDEBAR_CONPADDINGRIGHTLABEL" description="MOD_SLIDEBAR_CONPADDINGRIGHTDESCRIPTION" />
+		<field name="conpaddingtop" type="text" default="10" label="MOD_SLIDEBAR_CONPADDINGTOPLABEL" description="MOD_SLIDEBAR_CONPADDINGTOPDESCRIPTION" />
+		<field name="conpaddingbottom" type="text" default="10" label="MOD_SLIDEBAR_CONPADDINGBOTTOMLABEL" description="MOD_SLIDEBAR_CONPADDINGBOTTOMDESCRIPTION" />
+
+		
+		<field name="zindex" type="text" default="999999" label="MOD_SLIDEBAR_ZINDEXLABEL" description="MOD_SLIDEBAR_ZINDEXDESCRIPTION" />
+		<field name="speed" type="text" default="500" label="MOD_SLIDEBAR_TRANSITIONSPEEDLABEL" description="MOD_SLIDEBAR_TRANSITIONSPEEDDESCRIPTION" />
+
+		<field type="spacer" name="blankspace2" hr="true"/>
+		<field type="spacer" name="myspacer2" label="MOD_SLIDEBAR_TABSETTINGSLABEL" />
+		<field name="theme" type="text" default="sleekWhite" label="MOD_SLIDEBAR_THEMELABEL" description="MOD_SLIDEBAR_THEMEDESCRIPTION" />
+		<field name="type" type="list" default="png" label="MOD_SLIDEBAR_TYPELABEL" description="MOD_SLIDEBAR_TYPEDESCRIPTION">
+			<option value="gif">MOD_SLIDEBAR_GIF</option>
+			<option value="png">MOD_SLIDEBAR_PNG</option>
+		</field>
+		
+		<field name="slidevertical" type="list" default="absolute" label="MOD_SLIDEBAR_SCROLLLABEL" description="MOD_SLIDEBAR_SCROLLDESCRIPTION">
+			<option value="absolute">MOD_SLIDEBAR_NO</option>
+			<option value="fixed">MOD_SLIDEBAR_YES</option>
+		</field>
+
+		<field name="widthdebug" type="list" default="1" label="MOD_SLIDEBAR_WIDTHDEBUGLABEL" description="MOD_SLIDEBAR_WIDTHDEBUGDESCRIPTION">
+			<option value="1">MOD_SLIDEBAR_ON</option>
+			<option value="0">MOD_SLIDEBAR_OFF</option>
+		</field>
+		
+		<field name="retina" type="list" default="On" label="MOD_SLIDEBAR_RETINALABEL" description="MOD_SLIDEBAR_RETINADESCRIPTION">
+			<option value="On">MOD_SLIDEBAR_ON</option>
+			<option value="Off">MOD_SLIDEBAR_OFF</option>
+		</field>
+
+		<field name="imgalt" type="text" default="SlideBar" label="MOD_SLIDEBAR_ALTLABEL" description="MOD_SLIDEBAR_ALTDESCRIPTION" />
+		</fieldset>
+		<fieldset name="advanced">	
+		<field
+			name="layout"
+			 type="modulelayout"
+			 label="JFIELD_ALT_LAYOUT_LABEL"
+			 description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+		<field
+			 name="moduleclass_sfx"
+			 type="text"
+			 label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+			 description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		<field
+			 name="cache"
+			 type="list"
+			 default="1"
+			 label="COM_MODULES_FIELD_CACHING_LABEL"
+			 description="COM_MODULES_FIELD_CACHING_DESC">
+		 <option
+			 value="1">JGLOBAL_USE_GLOBAL</option>
+		 <option
+			 value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+		 </field>
+		<field
+			 name="cache_time"
+			 type="text"
+			 default="900"
+			 label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+			 description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+		</fieldset>
+	</fields>
+	</config>
+</extension>
