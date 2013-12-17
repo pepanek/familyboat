@@ -160,6 +160,6 @@ MooTools tips - - - - */
 	display:none;
 }
 
-.module_round_box_outer .s5_multibox, #s5_component_wrap .s5_multibox {
+.module_round_box_outer .s5_multibox, #s5_component_wrap .s5_multibox,.module_round_box_top_row_outer .s5_multibox {
 display:none !important;
 }

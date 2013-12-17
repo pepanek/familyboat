@@ -134,6 +134,73 @@ $suffix = "";
 	<?php endif;
 }
 
+function modChrome_round_box_top_row($module, &$params, &$attribs)
+{
+$suffix = $params->get('moduleclass_sfx');
+if ($suffix == "_menu") {
+$suffix = "";
+}
+if ($suffix == "_text") {
+$suffix = "";
+}
+
+	if (!empty ($module->content)) : 
+	
+			$s5_module_title = $module->title;
+	
+			$responsive_class_placement_beginning = strpos($s5_module_title,"class=");
+			$responsive_class = "";
+			
+			if ($responsive_class_placement_beginning >= 1) {
+				$responsive_class = substr($s5_module_title, $responsive_class_placement_beginning + 6, 5000);
+				$s5_module_title = substr($s5_module_title, 0, $responsive_class_placement_beginning);
+			}
+			
+		?>
+	
+		<?php if ($module->showtitle) : ?>
+			
+			<?php 
+			
+			$s5_h3 = strpos($s5_module_title," ");
+			
+			if ($s5_h3 != "") {
+			$s5_h3_beginning = substr($s5_module_title, 0, $s5_h3);
+			$s5_h3_end = substr($s5_module_title, $s5_h3, 500);
+			}
+			else {
+			$s5_h3_beginning = $s5_module_title;
+			$s5_h3_end = "";
+			}
+			
+			?>
+			
+		<?php endif; ?>
+		
+		<div class="module_round_box_top_row_outer<?php if ($responsive_class != "") { echo ' '.$responsive_class; } ?>">
+		
+		<div class="module_round_box_top_row<?php echo $suffix ?>">
+
+
+				<div class="s5_module_box_1">
+					<div class="s5_module_box_2">
+						<?php if ($module->showtitle) : ?>
+						<div class="s5_mod_h3_outer">
+							<h3 class="s5_mod_h3"><span class="s5_h3_first"><?php echo $s5_h3_beginning ?> </span><?php echo $s5_h3_end ?></h3>
+						</div>
+						<?php endif; ?>
+						<?php $module->content = JHTML::_('content.prepare', $module->content);echo $module->content; ?>
+						<div style="clear:both; height:0px"></div>
+					</div>
+				</div>
+
+			
+		</div>
+		
+		</div>
+
+	<?php endif;
+}
 
 
 function modChrome_title_only($module, &$params, &$attribs)

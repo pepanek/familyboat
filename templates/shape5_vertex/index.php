@@ -68,7 +68,7 @@ margin-top:0px;
 }
 <?php } ?>
 
-#s5_header_area_inner2, .module_round_box, .module_round_box-dark, #s5_component_wrap, #s5_footer_area_inner2 {
+#s5_header_area_inner2, .module_round_box,.module_round_box_top_row, .module_round_box-dark, #s5_component_wrap, #s5_footer_area_inner2 {
 -webkit-box-shadow: 0 0px 8px #<?php echo $s5_shadow_color ?>;
 -moz-box-shadow: 0 0px 8px #<?php echo $s5_shadow_color ?>;
 box-shadow: 0 0px 8px #<?php echo $s5_shadow_color ?>; 
@@ -131,41 +131,7 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 	<!-- Header -->			
 		<div id="s5_header_area1">		
 		<div id="s5_header_area2">	
-		<div id="s5_header_area_inner" class="s5_wrap">		
-		<div id="s5_header_area_inner2">	
-			<div id="s5_header_wrap">
-			
-				<?php if($s5_pos_logo == "published") { ?>
-					<div id="s5_logo_module" style="height:<?php echo $s5_logo_height ?>px;width:<?php echo $s5_logo_width ?>px">
-						<?php s5_module_call('logo','notitle'); ?>
-					</div>	
-				<?php } else { ?>
-					<img alt="logo"  style="height:<?php echo $s5_logo_height ?>px;width:<?php echo $s5_logo_width ?>px" src="<?php echo $s5_directory_path ?>/images/s5_logo.png" id="s5_logo" onclick="window.document.location.href='<?php echo $LiveSiteUrl ?>'" />
-				<?php } ?>
-				
-				<?php if($s5_pos_banner == "published") { ?>
-					<div id="s5_banner" style="padding-left:<?php echo $s5_logo_width + 10 ?>px">
-						<?php s5_module_call('banner','raw'); ?>
-					</div>
-				<?php } ?>
-				
-				<div style="clear:both; height:0px"></div>			
-			</div>
-			
-			<?php if ($s5_show_menu == "show" || $s5_pos_search == "published") { ?>
-				<div id="s5_menu_wrap">
-					<?php if ($s5_show_menu == "show") { ?>
-						<?php include("vertex/s5flex_menu/default.php"); ?>
-					<?php } ?>
-					<?php if($s5_pos_search == "published") { ?>
-						<div id="s5_search">
-							<?php s5_module_call('search','notitle'); ?>
-						</div>
-					<?php } ?>
-					<div style="clear:both; height:0px"></div>
-				</div>
-			<?php } ?>
-			
+		<div id="s5_header_area_inner" class="s5_wrap">
 			<?php if (($s5_register  != "") || ($s5_login  != "") || ($s5_pos_breadcrumb == "published") || ($s5_font_resizer == "yes") || ($s5_linked_in  != "") || ($s5_rss  != "") || ($s5_twitter  != "") || ($s5_facebook  != "") || ($s5_google  != "")) { ?>
 				<div id="s5_breadcrumb_fonts_wrap">
 					<?php if ($s5_pos_breadcrumb == "published") { ?>
@@ -227,6 +193,41 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 				</div>
 			
 			<?php } ?>
+		<div id="s5_header_area_inner2">	
+			<div id="s5_header_wrap">
+
+			
+				<?php if($s5_pos_logo == "published") { ?>
+					<div id="s5_logo_module" style="height:<?php echo $s5_logo_height ?>px;width:<?php echo $s5_logo_width ?>px">
+						<?php s5_module_call('logo','notitle'); ?>
+					</div>	
+				<?php } else { ?>
+					<img alt="logo"  style="padding:5px;height:<?php echo $s5_logo_height ?>px;width:<?php echo $s5_logo_width ?>px" src="<?php echo $s5_directory_path ?>/images/logo.png" id="s5_logo" onclick="window.document.location.href='<?php echo $LiveSiteUrl ?>'" />
+				<?php } ?>
+				
+				<?php if($s5_pos_banner == "published") { ?>
+					<div id="s5_banner" style="padding-left:<?php echo $s5_logo_width + 10 ?>px">
+						<?php s5_module_call('banner','raw'); ?>
+					</div>
+				<?php } ?>
+				
+				<div style="clear:both; height:0px"></div>			
+			</div>
+			
+			<?php if ($s5_show_menu == "show" || $s5_pos_search == "published") { ?>
+				<div id="s5_menu_wrap">
+					<?php if ($s5_show_menu == "show") { ?>
+						<?php include("vertex/s5flex_menu/default.php"); ?>
+					<?php } ?>
+					<?php if($s5_pos_search == "published") { ?>
+						<div id="s5_search">
+							<?php s5_module_call('search','notitle'); ?>
+						</div>
+					<?php } ?>
+					<div style="clear:both; height:0px"></div>
+				</div>
+			<?php } ?>
+			
 			
 		</div>
 		</div>
@@ -307,13 +308,13 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 				<div id="s5_top_row2_inner">					
 					<?php if ($s5_pos_top_row2_1 == "published") { ?>
 						<div id="s5_pos_top_row2_1" class="s5_float_left" style="width:<?php echo $s5_pos_top_row2_1_width ?>%">
-							<?php s5_module_call('top_row2_1','round_box'); ?>
+							<?php s5_module_call('top_row2_1','round_box_top_row'); ?>
 						</div>
 					<?php } ?>
 					
 					<?php if ($s5_pos_top_row2_2 == "published") { ?>
 						<div id="s5_pos_top_row2_2" class="s5_float_left" style="width:<?php echo $s5_pos_top_row2_2_width ?>%">
-							<?php s5_module_call('top_row2_2','round_box'); ?>
+							<?php s5_module_call('top_row2_2','round_box_top_row'); ?>
 						</div>
 					<?php } ?>
 					

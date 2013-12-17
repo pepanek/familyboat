@@ -527,7 +527,7 @@ color:inherit;
 
 /* ++++++++++++++  Joomla 3.0+ breadcrumb  ++++++++++++++ */
 
-.moduletable .breadcrumb, .module_round_box_outer .breadcrumb {
+.moduletable .breadcrumb, .module_round_box_outer .breadcrumb, .module_round_box_top_row_outer .breadcrumb {
 padding:0px;
 background:none;
 -webkit-box-shadow: none;

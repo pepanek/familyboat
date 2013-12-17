@@ -1,4 +1,4 @@
-#s5_navv li, #s5_search, .module_round_box_outer,  #s5_header_wrap  {
+#s5_navv li, #s5_search, .module_round_box_outer, .module_round_box_top_row_outer,  #s5_header_wrap  {
 direction:rtl;
 text-align:right;
 }
