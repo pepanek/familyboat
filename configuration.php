@@ -1,7 +1,7 @@
 <?php
 class JConfig {
 	public $offline = '0';
-	public $offline_message = 'Tento web je právě v údržbě.<br /> Zkuste to prosím později.';
+	public $offline_message = 'This site is down for maintenance.<br /> Please check back again soon.';
 	public $display_offline_message = '1';
 	public $offline_image = '';
 	public $sitename = 'familyboat';
@@ -18,7 +18,7 @@ class JConfig {
 	public $db = 'familyboat';
 	public $dbprefix = 'fb_';
 	public $live_site = '';
-	public $secret = 'vDrL9K9no5OlSVJv';
+	public $secret = 'HHorQQOHwmasPDbr';
 	public $gzip = '0';
 	public $error_reporting = 'default';
 	public $helpurl = 'http://help.joomla.org/proxy/index.php?option=com_help&amp;keyref=Help{major}{minor}:{keyref}';
@@ -29,8 +29,9 @@ class JConfig {
 	public $ftp_root = '';
 	public $ftp_enable = '';
 	public $offset = 'UTC';
+	public $mailonline = '1';
 	public $mailer = 'mail';
-	public $mailfrom = 'pony@email.cz';
+	public $mailfrom = 'pepa@familyboat.cz';
 	public $fromname = 'familyboat';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
