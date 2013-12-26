@@ -26,7 +26,7 @@ foreach ($list as $i => &$item) :
 	$class .= ' level' . $itemlevel;
 	
 	if (!empty($class)) {
-		$class = ' class="accordeonck '.trim($class) .' '.$item->liclass.'"';
+		$class = ' class="accordeonck_12 '.trim($class) .' '.$item->liclass.'"';
 	}
 
 	echo '<li id="item-'.$item->id.'"'.$class.' data-level="' . $itemlevel . '">';
