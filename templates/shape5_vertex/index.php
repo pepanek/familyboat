@@ -68,10 +68,16 @@ margin-top:0px;
 }
 <?php } ?>
 
-#s5_header_area_inner2, .module_round_box,.module_round_box_top_row, .module_round_box-dark, #s5_component_wrap, #s5_footer_area_inner2 {
+.module_round_box, .module_round_box-dark, #s5_component_wrap, #s5_footer_area_inner2 {
 -webkit-box-shadow: 0 0px 8px #<?php echo $s5_shadow_color ?>;
 -moz-box-shadow: 0 0px 8px #<?php echo $s5_shadow_color ?>;
 box-shadow: 0 0px 8px #<?php echo $s5_shadow_color ?>; 
+}
+
+#s5_header_area_inner2 ,.module_round_box_top_row{
+-webkit-box-shadow: 0 8px 8px #<?php echo $s5_shadow_color ?>;
+-moz-box-shadow: 0 8px 8px #<?php echo $s5_shadow_color ?>;
+box-shadow: 0 8px 8px #<?php echo $s5_shadow_color ?>; 
 }
 
 a, .module_round_box .s5_h3_first, .module_round_box-none .s5_h3_first, .module_round_box ul.menu .current a, h2, h4, #s5_md_outer_wrap h3 {
@@ -166,7 +172,7 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 											
 												<?php if ($s5_login  != "") { ?>
 													<a href="<?php echo JRoute::_('index.php?option=com_users&view=login'); ?>" id="s5_login">
-														<?php if ($s5_user_id) { echo $s5_loginout; } else { echo $s5_login; } ?>
+															<?php if ($s5_user_id) { echo $s5_loginout; } else { echo $s5_login; } ?>
 													</a>
 												<?php } ?>
 											
@@ -202,7 +208,7 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 						<?php s5_module_call('logo','notitle'); ?>
 					</div>	
 				<?php } else { ?>
-					<img alt="logo"  style="padding:5px;height:<?php echo $s5_logo_height ?>px;width:<?php echo $s5_logo_width ?>px" src="<?php echo $s5_directory_path ?>/images/logo.png" id="s5_logo" onclick="window.document.location.href='<?php echo $LiveSiteUrl ?>'" />
+				<img alt="logo"  style="padding:5px;height:<?php echo $s5_logo_height ?>px;width:<?php echo $s5_logo_width ?>px" src="<?php echo $s5_directory_path ?>/images/logo.png" id="s5_logo" onclick="window.document.location.href='<?php echo $LiveSiteUrl ?>'" />
 				<?php } ?>
 				
 				<?php if($s5_pos_banner == "published") { ?>
@@ -308,13 +314,13 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 				<div id="s5_top_row2_inner">					
 					<?php if ($s5_pos_top_row2_1 == "published") { ?>
 						<div id="s5_pos_top_row2_1" class="s5_float_left" style="width:<?php echo $s5_pos_top_row2_1_width ?>%">
-							<?php s5_module_call('top_row2_1','round_box_top_row'); ?>
+							<?php s5_module_call('top_row2_1','round_box'); ?>
 						</div>
 					<?php } ?>
 					
 					<?php if ($s5_pos_top_row2_2 == "published") { ?>
 						<div id="s5_pos_top_row2_2" class="s5_float_left" style="width:<?php echo $s5_pos_top_row2_2_width ?>%">
-							<?php s5_module_call('top_row2_2','round_box_top_row'); ?>
+							<?php s5_module_call('top_row2_2','round_box'); ?>
 						</div>
 					<?php } ?>
 					
