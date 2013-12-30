@@ -47,7 +47,7 @@ document.write('Your template does\'t have jQuery lib installed. Please enable j
 	</form>
 <?php else : ?>
 
-<a href="#" rel="tppoplogin" class="poplogin"><?php echo JText::_('LOGIN') ?></a>
+<a href="#" rel="tppoplogin" class="poplogin"><?php echo JText::_('Login') ?></a>
 <!-- TPPopLogin Module - Another Quality Freebie from TemplatePlazza.com -->
 <div id="tppoplogin" class="popbox">
 	<div class="tpsignin"><?php echo JText::_('SIGNINORREGISTER') ?></div>

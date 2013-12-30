@@ -140,12 +140,6 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 		<div id="s5_header_area_inner" class="s5_wrap">
 			<?php if (($s5_register  != "") || ($s5_login  != "") || ($s5_pos_breadcrumb == "published") || ($s5_font_resizer == "yes") || ($s5_linked_in  != "") || ($s5_rss  != "") || ($s5_twitter  != "") || ($s5_facebook  != "") || ($s5_google  != "")) { ?>
 				<div id="s5_breadcrumb_fonts_wrap">
-					<?php if ($s5_pos_breadcrumb == "published") { ?>
-						<div id="s5_breadcrumb_wrap">
-							<?php s5_module_call('breadcrumb','notitle'); ?>
-						</div>
-					<?php } ?>
-					
 					<?php if (($s5_font_resizer == "yes") || ($s5_register  != "") || ($s5_login  != "") || ($s5_linked_in  != "") || ($s5_rss  != "") || ($s5_twitter  != "") || ($s5_facebook  != "") || ($s5_google  != "")) { ?>
 						<div id="s5_social_wrap1">
 							<div id="s5_social_wrap_inner">
@@ -170,11 +164,11 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 									<div id="s5_loginreg">	
 											<div id="s5_logregtm">
 											
-												<?php if ($s5_login  != "") { ?>
+<!--												<?php if ($s5_login  != "") { ?>
 													<a href="<?php echo JRoute::_('index.php?option=com_users&view=login'); ?>" id="s5_login">
 															<?php if ($s5_user_id) { echo $s5_loginout; } else { echo $s5_login; } ?>
-													</a>
-												<?php } ?>
+ 													</a> 
+												<?php } ?> -->
 											
 												<?php if ($s5_user_id) { } else {?>
 													<a href="<?php echo JRoute::_('index.php?option=com_users&view=registration'); ?>" id="s5_register">
@@ -195,7 +189,13 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 						</div>
 					<?php } ?>
 				
-				<div style="clear:both;height:0px"></div>
+					<?php if ($s5_pos_breadcrumb == "published") { ?>
+						<div id="s5_breadcrumb_wrap">
+							<?php s5_module_call('breadcrumb','notitle'); ?>
+						</div>
+					<?php } ?>
+					
+					<div style="clear:both;height:0px"></div>
 				</div>
 			
 			<?php } ?>
@@ -1028,7 +1028,7 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 	<!-- Bottom Vertex Calls -->
 	<?php require("vertex/includes/vertex_includes_bottom.php"); ?>
 	
-	<a title="shape5.com" href="http://www.shape5.com" target="blank" id="s5_shape5_logo"></a>
+<!-- 	<a title="shape5.com" href="http://www.shape5.com" target="blank" id="s5_shape5_logo"></a> -->
 	
 	<?php s5_module_call('debug','fourdivs'); ?>
 

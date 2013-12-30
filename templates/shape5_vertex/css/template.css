@@ -420,7 +420,7 @@ a.readmore-link, a.comments-link {
 }
 
 #s5_logo {
-  float: right;
+  float: left;
   cursor: pointer;
 }
 
@@ -451,7 +451,7 @@ a.readmore-link, a.comments-link {
 }
 
 #s5_breadcrumb_wrap {
-  float: left;
+  float: right;
 }
 
 #s5_breadcrumb_wrap img {

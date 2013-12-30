@@ -6,7 +6,7 @@ class JConfig {
 	public $offline_image = '';
 	public $sitename = 'familyboat';
 	public $editor = 'jce';
-	public $captcha = '0';
+	public $captcha = 'recaptcha';
 	public $list_limit = '20';
 	public $access = '1';
 	public $debug = '0';
@@ -66,5 +66,4 @@ class JConfig {
 	public $cookie_domain = '';
 	public $cookie_path = '';
 	public $asset_id = '1';
-  public $root_user='admin';
 }
