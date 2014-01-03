@@ -208,11 +208,11 @@ div.itemHeader h2.itemTitle, div.catItemHeader h3.catItemTitle, h3.userItemTitle
 						<?php s5_module_call('logo','notitle'); ?>
 					</div>	
 				<?php } else { ?>
-				<img alt="logo"  style="padding:5px;height:<?php echo $s5_logo_height ?>px;width:<?php echo $s5_logo_width ?>px" src="<?php echo $s5_directory_path ?>/images/logo.png" id="s5_logo" onclick="window.document.location.href='<?php echo $LiveSiteUrl ?>'" />
+				<div style="width:50px;float: left">&nbsp;</div> <img alt="logo"  style="padding:0px;height:<?php echo $s5_logo_height ?>px;width:<?php echo $s5_logo_width ?>px" src="<?php echo $s5_directory_path ?>/images/logo.png" id="s5_logo" onclick="window.document.location.href='<?php echo $LiveSiteUrl ?>'" />
 				<?php } ?>
 				
 				<?php if($s5_pos_banner == "published") { ?>
-					<div id="s5_banner" style="padding-left:<?php echo $s5_logo_width + 10 ?>px">
+					<div id="s5_banner">
 						<?php s5_module_call('banner','raw'); ?>
 					</div>
 				<?php } ?>

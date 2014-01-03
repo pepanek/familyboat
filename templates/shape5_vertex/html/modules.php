@@ -202,7 +202,7 @@ $suffix = "";
 	<?php endif;
 }
 
-function modChrome_round_box_top_menu($module, &$params, &$attribs)
+function modChrome_round_box_left_menu($module, &$params, &$attribs)
 {
 	$suffix = $params->get('moduleclass_sfx');
 	if ($suffix == "_menu") {
@@ -245,13 +245,14 @@ function modChrome_round_box_top_menu($module, &$params, &$attribs)
 			
 		<?php endif; ?>
 		
-		<div class="module_round_box_top_row_outer<?php if ($responsive_class != "") { echo ' '.$responsive_class; } ?>">
+		<div class="module_round_box_left_menu_outer<?php if ($responsive_class != "") { echo ' '.$responsive_class; } ?>">
 		
-		<div class="module_round_box_top_row<?php echo $suffix ?>">
+		<div class="module_round_box_left_menu<?php echo $suffix ?>">
 
 
 				<div class="s5_module_box_1">
 					<div class="s5_module_box_2">
+					<div class="left_menu">
 						<?php if ($module->showtitle) : ?>
 						<div class="s5_mod_h3_outer">
 							<h3 class="s5_mod_h3"><span class="s5_h3_first"><?php echo $s5_h3_beginning ?> </span><?php echo $s5_h3_end ?></h3>
@@ -259,6 +260,7 @@ function modChrome_round_box_top_menu($module, &$params, &$attribs)
 						<?php endif; ?>
 						<?php $module->content = JHTML::_('content.prepare', $module->content);echo $module->content; ?>
 						<div style="clear:both; height:0px"></div>
+					</div>
 					</div>
 				</div>
 

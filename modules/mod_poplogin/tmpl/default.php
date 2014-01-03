@@ -92,8 +92,8 @@ document.write('Your template does\'t have jQuery lib installed. Please enable j
     
 			<?php if(JPluginHelper::isEnabled('system', 'remember')) : ?>
 			<div class="tppoploginremember">
-				<input id="modlgn_remember" type="checkbox" name="remember" value="yes" alt="Remember Me" />
-				<?php echo JText::_('Remember me') ?></div>
+				<input id="modlgn_remember" type="checkbox" name="remember" value="yes" alt="<?php echo JText::_('REMEMBER_ME') ?>" />
+				<?php echo JText::_('REMEMBER_ME') ?></div>
 			<?php endif; ?>
 			<div>
 				<input type="submit" name="Submit" class="tppoploginbutton" value="<?php echo JText::_('JLOGIN') ?>" />

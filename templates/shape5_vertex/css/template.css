@@ -312,15 +312,13 @@ a.readmore-link, a.comments-link {
 .module_round_box ul.menu a {
   padding: 6px 24px;
   display: block;
-  background: url("../images/system/arrow.png") no-repeat scroll
-    left center transparent;
+  background: url("../images/system/arrow.png") no-repeat scroll left center transparent;
   color: rgb(51, 51, 51);
-  border-bottom: 1px dotted rgb(211,
-    211, 211);
+  border-bottom: 1px dotted rgb(211, 211, 211);
 }
 
 .module_round_box ul.menu a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .module_round_box ul.menu ul a:hover {
@@ -328,18 +326,15 @@ a.readmore-link, a.comments-link {
 }
 
 .module_round_box ul.menu ul a {
-  background: none repeat scroll
-    0% 0% transparent;
-  padding: 6px 6px 6px
-    10px;
+  background: none repeat scroll 0% 0% transparent;
+  padding: 6px 6px 6px 10px;
   border-bottom: medium none;
   display: block;
 }
 
 .module_round_box ul.menu ul ul a {
   font-size: 0.9em;
-  padding: 3px 3px 3px
-    20px;
+  padding: 3px 3px 3px 20px;
   border-bottom: medium none;
   display: block;
   font-weight: normal;
@@ -429,8 +424,8 @@ a.readmore-link, a.comments-link {
 }
 
 #s5_banner {
-  padding-top: 36px;
-  padding-right: 32px;
+  padding-top: 0px;
+  padding-right: 0px;
   color: rgb(204, 204, 204);
 }
 
@@ -572,33 +567,24 @@ a.readmore-link, a.comments-link {
 }
 
 .module_round_box {
-  background: none repeat scroll
-    0% 0% rgb(255, 255, 255);
+  background: none repeat scroll 0% 0% rgb(255, 255, 255);
   border-radius: 6px;
-  border: 1px solid rgb(197,
-    197, 197);
+  border: 1px solid rgb(197, 197, 197);
   padding: 20px 20px 16px;
 }
 
 .module_round_box .s5_mod_h3 {
-  border-bottom: 1px solid rgb(197,
-    197, 197);
-  background: -moz-linear-gradient(center top ,
-    rgb(255, 255, 255) 0%, rgb(249,
-    249, 249) 100%) repeat scroll
-    0% 0% transparent;
-  border-radius: 6px 6px 0px
-    0px;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  background: -moz-linear-gradient(center top , rgb(255, 255, 255) 0%, rgb(249, 249, 249) 100%) repeat scroll 0% 0% transparent;
+  border-radius: 6px 6px 0px0px;
   padding: 12px 13px 11px;
   margin: -20px -20px 12px;
 }
 
 .module_round_box-dark {
-  background: none repeat scroll
-    0% 0% rgb(26, 26, 26);
+  background: none repeat scroll 0% 0% rgb(26, 26, 26);
   border-radius: 6px;
-  border: 1px solid rgb(197,
-    197, 197);
+  border: 1px solid rgb(197, 197, 197);
   padding: 20px 20px 16px;
   color: rgb(255, 255, 255);
 }
@@ -613,21 +599,15 @@ a.readmore-link, a.comments-link {
 
 .module_round_box-dark .s5_mod_h3 {
   color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(11,
-    11, 11);
-  background: -moz-linear-gradient(center top ,
-    rgb(26, 26, 26) 0%, rgb(18,
-    18, 18) 100%) repeat scroll
-    0% 0% transparent;
-  border-radius: 6px 6px 0px
-    0px;
+  border-bottom: 1px solid rgb(11, 11, 11);
+  background: -moz-linear-gradient(center top , rgb(26, 26, 26) 0%, rgb(18, 18, 18) 100%) repeat scroll 0% 0% transparent;
+  border-radius: 6px 6px 0px0px;
   padding: 12px 13px 11px;
   margin: -20px -20px 12px;
 }
 
 .module_round_box-none {
-  background: none repeat scroll
-    0% 0% transparent;
+  background: none repeat scroll 0% 0% transparent;
 }
 
 .module_round_box-none .s5_mod_h3 {
@@ -646,14 +626,14 @@ a.readmore-link, a.comments-link {
   margin-bottom: 1px;
 }
 
+.s5_mod_h3 {
+  font-size: 1em;
+}
+/*------------------------------------------------------ TOP ROW ---------------------------------------------------------------------*/
 .module_round_box_top_row_outer {
   margin-left: 5px;
   margin-right: 0px;
   margin-bottom: 5px;
-}
-
-.s5_mod_h3 {
-  font-size: 1em;
 }
 
 .module_round_box_top_row {
@@ -664,24 +644,17 @@ a.readmore-link, a.comments-link {
 }
 
 .module_round_box_top_row .s5_mod_h3 {
-  border-bottom: 1px solid rgb(197,
-    197, 197);
-  background: -moz-linear-gradient(center top ,
-    rgb(255, 255, 255) 0%, rgb(249,
-    249, 249) 100%) repeat scroll
-    0% 0% transparent;
-  border-radius: 6px 6px 0px
-    0px;
+  border-bottom: 1px solid rgb(197, 197, 197);
+  background: -moz-linear-gradient(center top , rgb(255, 255, 255) 0%, rgb(249, 249, 249) 100%) repeat scroll 0% 0% transparent;
+  border-radius: 6px 6px 0px 0px;
   padding: 12px 13px 11px;
   margin: -20px -20px 12px;
 }
 
 .module_round_box_top_row-dark {
-  background: none repeat scroll
-    0% 0% rgb(26, 26, 26);
+  background: none repeat scroll 0% 0% rgb(26, 26, 26);
   border-radius: 6px;
-  border: 1px solid rgb(197,
-    197, 197);
+  border: 1px solid rgb(197, 197, 197);
   padding: 20px 20px 16px;
   color: rgb(255, 255, 255);
 }
@@ -696,14 +669,9 @@ a.readmore-link, a.comments-link {
 
 .module_round_box_top_row-dark .s5_mod_h3 {
   color: rgb(255, 255, 255);
-  border-bottom: 1px solid rgb(11,
-    11, 11);
-  background: -moz-linear-gradient(center top ,
-    rgb(26, 26, 26) 0%, rgb(18,
-    18, 18) 100%) repeat scroll
-    0% 0% transparent;
-  border-radius: 6px 6px 0px
-    0px;
+  border-bottom: 1px solid rgb(11, 11, 11);
+  background: -moz-linear-gradient(center top , rgb(26, 26, 26) 0%, rgb(18, 18, 18) 100%) repeat scroll 0% 0% transparent;
+  border-radius: 6px 6px 0px 0px;
   padding: 12px 13px 11px;
   margin: -20px -20px 12px;
 }
@@ -728,7 +696,169 @@ a.readmore-link, a.comments-link {
   margin-right: 0px;
   margin-bottom: 1px;
 }
+.module_round_box_top_row ul.menu a {
+  padding: 6px 24px;
+  display: block;
+  background: url("../images/system/arrow.png") no-repeat scroll left center transparent;
+  color: rgb(51, 51, 51);
+  border-bottom: 1px dotted rgb(211, 211, 211);
+}
 
-.accordeonck {
-  background-color: red;
+.module_round_box_top_row ul.menu a:hover {
+  text-decoration: none;
+}
+
+.module_round_box_top_row ul.menu ul a:hover {
+  text-decoration: underline;
+}
+
+.module_round_box_top_row ul.menu ul a {
+  background: none repeat scroll 0% 0% transparent;
+  padding: 6px 6px 6px 10px;
+  border-bottom: medium none;
+  display: block;
+}
+
+.module_round_box_top_row ul.menu ul ul a {
+  font-size: 0.9em;
+  padding: 3px 3px 3px 20px;
+  border-bottom: medium none;
+  display: block;
+  font-weight: normal;
+}
+
+.module_round_box_top_row ul.menu #current ul span {
+  font-weight: normal;
+}
+
+.module_round_box_top_row ul.menu li {
+  padding-left: 10px;
+}
+
+.module_round_box_top_row ul.menu li ul li {
+  margin-left: 24px;
+}
+
+.module_round_box_top_row ul.menu img {
+  display: none;
+}
+/*------------------------------------------------------ LEFT MENU ---------------------------------------------------------------------*/
+.left_menu {
+  padding: 10px;
+  min-height: 100% !important;
+}
+.module_round_box_left_menu_outer {
+  margin-left: 5px;
+  margin-right: 0px;
+  margin-bottom: 5px;
+}
+
+.module_round_box_left_menu {
+  background: none repeat scroll 0% 0% rgb(255, 255, 255);
+  border: 1px solid rgb(197, 197, 197);
+  padding-top: 0px;
+}
+
+.module_round_box_left_menu .s5_mod_h3 {
+  border-bottom: 1px solid rgb(197, 197, 197);
+  background: -moz-linear-gradient(center top , rgb(255, 255, 255) 0%, rgb(249, 249, 249) 100%) repeat scroll 0% 0% transparent;
+  border-radius: 6px 6px 0px 0px;
+  padding: 12px 13px 11px;
+  margin: -20px -20px 12px;
+}
+
+.module_round_box_left_menu-dark {
+  background: none repeat scroll 0% 0% rgb(26, 26, 26);
+  border-radius: 6px;
+  border: 1px solid rgb(197, 197, 197);
+  padding: 20px 20px 16px;
+  color: rgb(255, 255, 255);
+}
+
+.module_round_box_left_menu-dark a {
+  color: rgb(153, 153, 153);
+}
+
+.module_round_box_left_menu-dark .s5_h3_first {
+  color: rgb(153, 153, 153);
+}
+
+.module_round_box_left_menu-dark .s5_mod_h3 {
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(11, 11, 11);
+  background: -moz-linear-gradient(center top , rgb(26, 26, 26) 0%, rgb(18, 18, 18) 100%) repeat scroll 0% 0% transparent;
+  border-radius: 6px 6px 0px 0px;
+  padding: 12px 13px 11px;
+  margin: -20px -20px 12px;
+}
+
+.module_round_box_left_menu-none {
+  background: none repeat scroll
+    0% 0% transparent;
+}
+
+.module_round_box_left_menu-none .s5_mod_h3 {
+  margin-bottom: 12px;
+}
+
+#s5_drop_down_inner .module_round_box_left_menu_outer {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+#s5_header_wrap .module_round_box_left_menu_outer {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 1px;
+}
+.module_round_box_left_menu ul.menu a {
+  padding: 6px 24px;
+  display: block;
+  background: url("../images/system/arrow.png") no-repeat scroll left center transparent;
+  color: rgb(51, 51, 51);
+  border-bottom: 1px dotted rgb(211, 211, 211);
+  font-family: Alegreya;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.module_round_box_left_menu ul.menu a:hover {
+  text-decoration: none;
+}
+
+.module_round_box_left_menu ul.menu ul a:hover {
+  text-decoration: underline;
+}
+
+.module_round_box_left_menu ul.menu ul a {
+  background: none repeat scroll 0% 0% transparent;
+  padding: 6px 6px 6px 10px;
+  border-bottom: medium none;
+  display: block;
+}
+
+.module_round_box_left_menu ul.menu ul ul a {
+  font-size: 0.9em;
+  padding: 3px 3px 3px 20px;
+  border-bottom: medium none;
+  display: block;
+  font-weight: normal;
+}
+
+.module_round_box_left_menu ul.menu #current ul span {
+  font-weight: normal;
+}
+
+.module_round_box_left_menu ul.menu li {
+  background: -moz-linear-gradient(center top , rgb(255, 255, 255) 0%, rgb(249, 249, 249) 100%) repeat scroll 0% 0% transparent;
+  padding: 0px;
+}
+
+.module_round_box_left_menu ul.menu li ul li {
+  margin-left: 24px;
+}
+
+.module_round_box_left_menu ul.menu img {
+  display: none;
 }

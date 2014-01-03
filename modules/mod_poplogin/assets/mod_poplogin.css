@@ -1,7 +1,7 @@
 #tppoplogin {   
 }
 .tpsignin {
-    background:url(bgsignin.gif) repeat-y top right #333333;
+    background:url(bgsignin.gif) repeat-y top right #000080;
     padding: 10px;
     color: #FFF;
     font-size:20px!important;
@@ -28,7 +28,7 @@
     width: 240px;
     float: right;
     padding: 20px;
-    background: #d1f7fe;
+    background: #FFFFFF;
     -webkit-border-bottom-right-radius: 5px;
     -moz-border-radius-bottomright: 5px;
     border-bottom-right-radius: 5px;
@@ -45,7 +45,7 @@
     font-size: 20px!important;
     font-weight: 700;
     letter-spacing: -1px;
-    color:#0F9ACD;
+    color:#73A0CF;
     text-align: right!important;
 }
 .tppoploginavatar {
@@ -130,7 +130,7 @@
 }
 .tppopsigninbutton a,
 .tppoploginbutton {
-    background:url(bgtppoploginbutton.png) no-repeat right 50% #00A8C6;
+    background:url(bgtppoploginbutton.png) no-repeat right 50% #000080;
     width: 140px !important;
     color: #FFF!important;
     text-shadow:0px 1px 0px #276891;
@@ -145,7 +145,7 @@
     text-align: left;
 }
 .tppopsigninbutton a{
-    background:url(bgtppoploginbutton.png) no-repeat right 50% #6CB329;   
+    background:url(bgtppoploginbutton.png) no-repeat right 50% #000080;   
 }
 .tppopsigninbutton a,
 .tppopsigninbutton a:visited {
@@ -153,12 +153,16 @@
     font-size: 16px!important;
 }
 .tppopsigninbutton a:hover,
-.tppoploginbutton:hover {
-    background-color: #000;
-    color: #FFF!important;
+.tppoploginbutton:hover,
+.tppopsigninbutton:hover  {
+    background-color: #FFF;
+    color: #73A0CF!important;
     text-shadow:none;
 }
-
+.tppopsigninbutton a:hover{
+	border: 1px solid #BDBCBC;
+	text-decoration: none;
+}
 #fade { /*--Transparent background layer--*/
 	display: none; /*--hidden by default--*/
 	background: #333;
