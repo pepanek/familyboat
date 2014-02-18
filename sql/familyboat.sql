@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Počítač: 127.0.0.1
--- Vygenerováno: Pát 03. led 2014, 22:08
+-- Vygenerováno: Úte 11. úno 2014, 20:29
 -- Verze serveru: 5.5.32
 -- Verze PHP: 5.4.19
 
@@ -26,6 +26,8 @@ USE `familyboat`;
 
 --
 -- Struktura tabulky `fb_assets`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_assets` (
@@ -136,6 +138,8 @@ INSERT INTO `fb_assets` (`id`, `parent_id`, `lft`, `rgt`, `level`, `name`, `titl
 --
 -- Struktura tabulky `fb_associations`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_associations` (
   `id` int(11) NOT NULL COMMENT 'A reference to the associated item.',
@@ -154,6 +158,8 @@ TRUNCATE TABLE `fb_associations`;
 
 --
 -- Struktura tabulky `fb_banners`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_banners` (
@@ -209,6 +215,8 @@ TRUNCATE TABLE `fb_banners`;
 --
 -- Struktura tabulky `fb_banner_clients`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_banner_clients` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -240,6 +248,8 @@ TRUNCATE TABLE `fb_banner_clients`;
 --
 -- Struktura tabulky `fb_banner_tracks`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_banner_tracks` (
   `track_date` datetime NOT NULL,
@@ -262,6 +272,8 @@ TRUNCATE TABLE `fb_banner_tracks`;
 --
 -- Struktura tabulky `fb_breezingforms`
 --
+-- Vytvořeno: Pát 27. pro 2013, 10:34
+--
 
 CREATE TABLE IF NOT EXISTS `fb_breezingforms` (
   `id` int(11) NOT NULL,
@@ -277,6 +289,8 @@ TRUNCATE TABLE `fb_breezingforms`;
 
 --
 -- Struktura tabulky `fb_categories`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_categories` (
@@ -341,6 +355,8 @@ INSERT INTO `fb_categories` (`id`, `asset_id`, `parent_id`, `lft`, `rgt`, `level
 
 --
 -- Struktura tabulky `fb_contact_details`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_contact_details` (
@@ -408,6 +424,8 @@ TRUNCATE TABLE `fb_contact_details`;
 --
 -- Struktura tabulky `fb_content`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_content` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -465,7 +483,7 @@ INSERT INTO `fb_content` (`id`, `asset_id`, `title`, `alias`, `introtext`, `full
 (2, 63, 'News 1', 'news-1', '<p>nejaky text</p>', '', 0, 8, '2013-12-26 15:53:01', 683, '', '2013-12-26 17:15:07', 683, 0, '0000-00-00 00:00:00', '2013-12-26 15:53:01', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 2, 1, '', '', 1, 0, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (3, 64, 'News2', 'news2', '<p>Registrujte se. Pro prvnich dvacet registrovanych zákazníků máme připraveny zajímavé slevy na první plavbu.</p>', '', 0, 8, '2013-12-26 15:53:29', 683, '', '2013-12-26 17:18:55', 683, 0, '0000-00-00 00:00:00', '2013-12-26 15:53:29', '0000-00-00 00:00:00', '{"image_intro":"images\\/slider\\/1.jpg","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 4, 0, '', '', 1, 5, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (4, 67, 'ŘECKO', 'recko', '<p style="margin-bottom: 0cm; text-align: justify;">Krajina plná dávné historie, přírody a vstřícných lidí - to je Řecko! Ostrovy v oblasti jižní Evropy vám nabídnou jedinečné přírodní scenérie, kdy se strmé bílé skály snoubí s nádherně azurově modrým mořem. Až překrásně kýčovité jsou výhledy na městečka plná čistých bílých domků s modrými okenicemi a střechami. Kombinace bílé a k modré barvy Řecku zkrátka patří. Koneckonců, jsou to barvy řecké státní vlajky. Modrá barva je symbolem moře a bezoblačné jižní oblohy. Bílá barva připomíná čistotu jejich záměrů v boji za svobodu a nezávislost. Kříž ve čtverci je pak odkazem na víru a řeckou zbožnost.</p>\r\n<p style="margin-bottom: 0cm; text-align: justify;">S námi poznáte jedinečné řecké ostrovy nejen v Jónském a Egejském moři. Každý z ostrovů (kterých je více než 2000) vás přivítá svou jedinečnou architekturou. Na většině z nich je možné si vypůjčit katamaran&nbsp;a vydat se prozkoumat ostrovy, a především zátoky, které nejsou z pevniny dostupné. <span style="color: #00ae00;">Naloďte se k nám a nechte na sebe dýchnout jejich mystickou atmosféru, daleko od průmyslu a neustálého shonu.&nbsp;</span><span style="color: #00ae00;"><span style="color: #ff0000;">(odkaz / proklik na mapu)</span></span></p>\r\n<p style="margin-bottom: 0cm;">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;"><span style="font-size: 0.8em;">&nbsp;</span><span style="color: #00ae00;">*</span><span style="color: #00ae00;">LEFKADA</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="color: #00ae00;">*ZAKYNTHOS</span></p>\r\n<p style="margin-bottom: 0cm;" align="CENTER"><span style="color: #00ae00;"><strong>FOTKA</strong></span></p>\r\n<p style="margin-bottom: 0cm;" align="CENTER">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;" align="CENTER">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;">Řecko je stát, který je ve své jižní části tvořen velkým množstvím menších a větších ostrovů. Zdejší gastronomie je tedy předem daná. Šťavnatá zelenina, čerstvé mořské plody a ryby, voňavé bylinky a samozřejmě olivový olej. To jsou hlavní suroviny, které v místních Tavernách (restauracích) ochutnáte. Slovo GASTRONIMIE je řeckého původu – není pro to divu, že jeho kuchyně je světově proslulá.</p>\r\n<p style="margin-bottom: 0cm;">Každý z ostrovů nabízí něco jiného. Je jen na vás, kde a jak se rozhodnete trávit vaší dovolenou. Jsou tu pláže, kde se potkáte s civilizací, kde jsou pozvolným vstupem do moře lemovány hotely. Další jsou pak prázdné a klidné, kde se maximálně potkáte s další posádkou. Ostrovní pláže mají jednu (ne)výhodu - v případě velkých vln jsou chráněny jinými blízkými ostrovy. Kotvit se dá i v zátokách lemovaných strmými skálami, kde je k přístup pouze po schodech shora.</p>\r\n<p style="margin-bottom: 0cm;">LEFKADA</p>\r\n<p style="margin-bottom: 0cm;"><strong>Ostrov</strong> Lefkada leží u severozápadní části řecké pevniny, pod ostrovem Korfu. Od pevniny je vzdálen pouze 1 km a je s ní spojen pomocí zvedacího mostu, na jehož konci vás přivítá hlavní město Lefkada, s polovinou obyvatelstva ostrova. Tedy s počtem přes 10 000.</p>\r\n<p style="margin-bottom: 0cm;"><strong>Na </strong>celém ostrově se rozkládá jedinečné pohoří Stavrotas, jehož vrcholy přesahují výšky 1 000 m. Panorama vrcholků hor a neuvěřitelně modrého moře je nezapomenutelné.</p>\r\n<p style="margin-bottom: 0cm;"><strong>Pláže</strong> jsou většinou lemovány prudkými vápencovými skalisky s krasovými jeskyněmi. Moře je od vápencového písku zbarveno do nádherného odstínu modré barvy.</p>\r\n<p style="margin-bottom: 0cm;">ZAKYNTHOS</p>\r\n<p style="margin-bottom: 0cm;"><strong>Ostrov</strong> Zakynthos, který s více jak 41 000 obyvateli je třetí největší ostrov v Jonském moři, leží u severozápadní části řecké pevniny, vzdálené 16 km. Hlavním městem je Zakynthos (kde žije okolo 16 000 obyvatel), který je důležitým přístavem a v blízkosti města leží i letiště.</p>\r\n<p style="margin-bottom: 0cm;"><strong>Jako</strong> většina Iónských ostrovů je hornatý. Jeho vrcholy jsou ale nižší než na Lefkadě (nejvyšší měří 758 m) a ve východní části převažují spíše rovinaté plochy. Na ostrově žije vzácný druh želv, které naleznte vyobrazeny snad všude a na všem. Před turisty však nejsou dostatečně chráněné a hrozí jejich vyhynutí.</p>\r\n<p style="margin-bottom: 0cm;"><strong>Za </strong>prohlédnutí na ostrově stojí pláže na severu ostrova s názvem Navagio, kde vás uchvátí prudké skály nad zlatavým pískem malých pláží a plážiček a opravdu neuvěřitelné odstíny modré barvy moře. &nbsp;</p>', '', 1, 9, '2013-12-26 23:35:32', 683, '', '2013-12-30 23:01:08', 683, 0, '0000-00-00 00:00:00', '2013-12-26 23:35:32', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 9, 1, '', '', 1, 27, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
-(5, 72, 'NAŠE POSÁDKA', 'nase-posadka', '<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt; text-align: justify;">Říká se, že každé zboží má svého kupce. Chápeme ty, pro něž je ideální dovolená u bazénu v hotelu, samozřejmě all inclusive. Rozumíme i těm, kteří si sbalí svých pár švestek a vydají se do světa po svých. Jestli ale mezi ně nepatříte a hledáte tak trochu akci a přitom potřebujete opravdu relaxovat, vyplujte s námi na moře! Jedině z paluby poznáte místa, kam se suchou noho nelze dostat a která v sobě skrývají neuvěřitelnou sílu. Na palubě totiž není žádný den stejný!</span></p>\r\n<p style="margin-bottom: 0cm;">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt;">Musíme vás ale upozornit, že první vyplutí může být (a ve většině případů opravdu je) prvním krokem k závislosti. Potkalo to celou naši posádku. Jsme parta … &nbsp;</span></p>\r\n<p style="margin-bottom: 0cm;">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt;">...<br /></span></p>\r\n<p style="margin-bottom: 0cm;">&nbsp;</p>\r\n<p style="margin-bottom: 0cm; text-align: justify;"><span style="font-family: verdana, geneva; font-size: 10pt;">Je to zkrátka nepopsatelný pocit. Pocit svobody a souznění s přírodou. Rádi o tom přesvědčíme i vás. Plavba na&nbsp;<span style="color: #00ae00;">Katamaránu<span style="color: #ff0000;">&nbsp;</span></span></span></p>\r\n<p style="margin-bottom: 0cm; text-align: justify;"><span style="font-family: verdana, geneva; font-size: 10pt;"><span style="color: #00ae00;"><span style="color: #ff0000;"></span></span><span style="color: #ff0000;">(proklik na <strong>NAŠE PALUBA/SLUŽBY) </strong></span>je pro plavbu s dětmi jako stvořený, protože oproti plachetnici je na moři mnohem stabilnější.</span></p>\r\n<p style="margin-bottom: 0cm; text-align: justify;">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt;"><strong>Nabízíme vám rodinou dovolenou na míru! Vyberte si destinaci a ostatní nechte na nás. Zajistíme pro vás:</strong></span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt;"><strong style="font-size: 0.8em;">* </strong>Loď dle vlastního výběru</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt;"><strong>* </strong>Letenky do vybrané destinace</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt;">* Transfer z letiště a zpět</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt;">* Dopravu do mariny a zpět</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt;">* Ubytování v před plavbou či po jejím skončení</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt;">* Zkušeného kapitána</span></p>', '', 1, 2, '2013-12-30 22:58:32', 683, '', '2013-12-30 22:59:15', 683, 0, '0000-00-00 00:00:00', '2013-12-30 22:58:32', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 2, 1, '', '', 1, 0, '{"robots":"","author":"","rights":"","xreference":""}', 1, 'cs-CZ', ''),
+(5, 72, 'NAŠE POSÁDKA', 'nase-posadka', '<p style="margin-bottom: 0cm; text-align: justify;"><span style="font-family: verdana, geneva; font-size: 10pt; text-align: justify; color: #000080;">Říká se, že každé zboží má svého kupce. Chápeme ty, pro něž je ideální dovolená u bazénu v hotelu, samozřejmě all inclusive. Rozumíme i těm, kteří si sbalí svých pár švestek a vydají se do světa po svých. Jestli ale mezi ně nepatříte a hledáte tak trochu akci a přitom potřebujete opravdu relaxovat, vyplujte s námi na moře! Jedině z paluby poznáte místa, kam se suchou nohou nelze dostat, &nbsp;a která v sobě skrývají neuvěřitelnou sílu a krásu.&nbsp;</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="color: #000080;">&nbsp;</span></p>\r\n<p style="margin-bottom: 0cm; text-align: justify;"><span style="font-family: verdana, geneva; font-size: 10pt; color: #000080;">Musíme vás ale upozornit, že první vyplutí může být (a ve většině případů opravdu je) prvním krokem k závislosti. Potkalo to celou naši posádku. Jsme parta … &nbsp;</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="color: #000080;">&nbsp;</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt; color: #000080;">...<br /></span></p>\r\n<p style="margin-bottom: 0cm;"><span style="color: #000080;">&nbsp;</span></p>\r\n<p style="margin-bottom: 0cm; text-align: justify;"><span style="font-family: verdana, geneva; font-size: 10pt; color: #000080;">Je to zkrátka nepopsatelný pocit. Pocit svobody a souznění s přírodou. Rádi vás o tom přesvědčíme. Naloďte se s námi, vezměte celou rodinu na skvělou dovolenou na katamarán! Pro plavbu s dětmi jako&nbsp;</span><span style="color: #000080; font-family: verdana, geneva; font-size: 10pt;">stvořený, protože oproti plachetnici je na moři mnohem stabilnější. A nudit se určitě nebudete - n<span style="color: #000080; font-family: verdana, geneva; text-align: justify;">a palubě totiž není žádný den stejný!</span></span></p>\r\n<p style="margin-bottom: 0cm; text-align: justify;"><span style="color: #000080;">&nbsp;</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt; color: #000080;"><strong>Nabízíme vám rodinou dovolenou na míru! Vyberte si destinaci a ostatní nechte na nás. Zajistíme pro vás:</strong></span></p>\r\n<p style="margin-bottom: 0cm;"><strong style="color: #000080; font-family: verdana, geneva; font-size: 10pt;">*</strong><span style="color: #000080; font-family: verdana, geneva; font-size: 10pt;"> </span><span style="color: #000080; font-family: verdana, geneva; font-size: 10pt;">Loď dle vlastního výběru</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt; color: #000080;"><strong>*</strong> Letenky do vybrané destinace</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt; color: #000080;"><strong>*</strong> Transfer z letiště a zpět</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt; color: #000080;"><strong>*</strong> Dopravu do mariny a zpět</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt; color: #000080;"><strong>*</strong> Ubytování v před plavbou či po jejím skončení</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt; color: #000080;"><strong>* </strong>Zkušeného kapitána</span></p>\r\n<p style="margin-bottom: 0cm;">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;"><span style="font-family: verdana, geneva; font-size: 10pt; color: #000080;">&nbsp;</span></p>', '', 1, 2, '2013-12-30 22:58:32', 683, '', '2014-01-03 22:17:43', 683, 0, '0000-00-00 00:00:00', '2013-12-30 22:58:32', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 10, 1, '', '', 1, 0, '{"robots":"","author":"","rights":"","xreference":""}', 1, 'cs-CZ', ''),
 (6, 73, 'ŘECKO (2)', 'recko-2', '<p style="margin-bottom: 0cm; text-align: justify;">Krajina plná dávné historie, přírody a vstřícných lidí - to je Řecko! Ostrovy v oblasti jižní Evropy vám nabídnou jedinečné přírodní scenérie, kdy se strmé bílé skály snoubí s nádherně azurově modrým mořem. Až překrásně kýčovité jsou výhledy na městečka plná čistých bílých domků s modrými okenicemi a střechami. Kombinace bílé a k modré barvy Řecku zkrátka patří. Koneckonců, jsou to barvy řecké státní vlajky. Modrá barva je symbolem moře a bezoblačné jižní oblohy. Bílá barva připomíná čistotu jejich záměrů v boji za svobodu a nezávislost. Kříž ve čtverci je pak odkazem na víru a řeckou zbožnost.</p>\r\n<p style="margin-bottom: 0cm; text-align: justify;">S námi poznáte jedinečné řecké ostrovy nejen v Jónském a Egejském moři. Každý z ostrovů (kterých je více než 2000) vás přivítá svou jedinečnou architekturou. Na většině z nich je možné si vypůjčit katamaran&nbsp;a vydat se prozkoumat ostrovy, a především zátoky, které nejsou z pevniny dostupné. <span style="color: #00ae00;">Naloďte se k nám a nechte na sebe dýchnout jejich mystickou atmosféru, daleko od průmyslu a neustálého shonu.&nbsp;</span><span style="color: #00ae00;"><span style="color: #ff0000;">(odkaz / proklik na mapu)</span></span></p>\r\n<p style="margin-bottom: 0cm;">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;"><span style="font-size: 0.8em;">&nbsp;</span><span style="color: #00ae00;">*</span><span style="color: #00ae00;">LEFKADA</span></p>\r\n<p style="margin-bottom: 0cm;"><span style="color: #00ae00;">*ZAKYNTHOS</span></p>\r\n<p style="margin-bottom: 0cm;" align="CENTER"><span style="color: #00ae00;"><strong>FOTKA</strong></span></p>\r\n<p style="margin-bottom: 0cm;" align="CENTER">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;" align="CENTER">&nbsp;</p>\r\n<p style="margin-bottom: 0cm;">Řecko je stát, který je ve své jižní části tvořen velkým množstvím menších a větších ostrovů. Zdejší gastronomie je tedy předem daná. Šťavnatá zelenina, čerstvé mořské plody a ryby, voňavé bylinky a samozřejmě olivový olej. To jsou hlavní suroviny, které v místních Tavernách (restauracích) ochutnáte. Slovo GASTRONIMIE je řeckého původu – není pro to divu, že jeho kuchyně je světově proslulá.</p>\r\n<p style="margin-bottom: 0cm;">Každý z ostrovů nabízí něco jiného. Je jen na vás, kde a jak se rozhodnete trávit vaší dovolenou. Jsou tu pláže, kde se potkáte s civilizací, kde jsou pozvolným vstupem do moře lemovány hotely. Další jsou pak prázdné a klidné, kde se maximálně potkáte s další posádkou. Ostrovní pláže mají jednu (ne)výhodu - v případě velkých vln jsou chráněny jinými blízkými ostrovy. Kotvit se dá i v zátokách lemovaných strmými skálami, kde je k přístup pouze po schodech shora.</p>\r\n<p style="margin-bottom: 0cm;">LEFKADA</p>\r\n<p style="margin-bottom: 0cm;"><strong>Ostrov</strong> Lefkada leží u severozápadní části řecké pevniny, pod ostrovem Korfu. Od pevniny je vzdálen pouze 1 km a je s ní spojen pomocí zvedacího mostu, na jehož konci vás přivítá hlavní město Lefkada, s polovinou obyvatelstva ostrova. Tedy s počtem přes 10 000.</p>\r\n<p style="margin-bottom: 0cm;"><strong>Na </strong>celém ostrově se rozkládá jedinečné pohoří Stavrotas, jehož vrcholy přesahují výšky 1 000 m. Panorama vrcholků hor a neuvěřitelně modrého moře je nezapomenutelné.</p>\r\n<p style="margin-bottom: 0cm;"><strong>Pláže</strong> jsou většinou lemovány prudkými vápencovými skalisky s krasovými jeskyněmi. Moře je od vápencového písku zbarveno do nádherného odstínu modré barvy.</p>\r\n<p style="margin-bottom: 0cm;">ZAKYNTHOS</p>\r\n<p style="margin-bottom: 0cm;"><strong>Ostrov</strong> Zakynthos, který s více jak 41 000 obyvateli je třetí největší ostrov v Jonském moři, leží u severozápadní části řecké pevniny, vzdálené 16 km. Hlavním městem je Zakynthos (kde žije okolo 16 000 obyvatel), který je důležitým přístavem a v blízkosti města leží i letiště.</p>\r\n<p style="margin-bottom: 0cm;"><strong>Jako</strong> většina Iónských ostrovů je hornatý. Jeho vrcholy jsou ale nižší než na Lefkadě (nejvyšší měří 758 m) a ve východní části převažují spíše rovinaté plochy. Na ostrově žije vzácný druh želv, které naleznte vyobrazeny snad všude a na všem. Před turisty však nejsou dostatečně chráněné a hrozí jejich vyhynutí.</p>\r\n<p style="margin-bottom: 0cm;"><strong>Za </strong>prohlédnutí na ostrově stojí pláže na severu ostrova s názvem Navagio, kde vás uchvátí prudké skály nad zlatavým pískem malých pláží a plážiček a opravdu neuvěřitelné odstíny modré barvy moře. &nbsp;</p>', '', -2, 9, '2013-12-26 23:35:32', 683, '', '2013-12-26 23:49:23', 0, 0, '0000-00-00 00:00:00', '2013-12-26 23:35:32', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 1, 0, '', '', 1, 0, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', ''),
 (7, 76, 'galerie', 'galerie', '<p><a id="mb1" class="s5mb" title="ImageExample #1:" href="http://www.shape5.com/demo/images/multibox1_lrg.jpg"> <img class="boxed" src="http://www.shape5.com/demo/images/multibox1.jpg" alt="" /> </a></p>\r\n<div class="s5_multibox mb2">Multiple Image #1. It can support <strong>html</strong>.</div>\r\n<p>bslvkaslvsakjflsak fsa;flsa fsa kjfsaf</p>', '', 1, 2, '2014-01-03 17:06:31', 683, '', '2014-01-03 17:09:18', 683, 0, '0000-00-00 00:00:00', '2014-01-03 17:06:31', '0000-00-00 00:00:00', '{"image_intro":"","float_intro":"","image_intro_alt":"","image_intro_caption":"","image_fulltext":"","float_fulltext":"","image_fulltext_alt":"","image_fulltext_caption":""}', '{"urla":false,"urlatext":"","targeta":"","urlb":false,"urlbtext":"","targetb":"","urlc":false,"urlctext":"","targetc":""}', '{"show_title":"","link_titles":"","show_tags":"","show_intro":"","info_block_position":"","show_category":"","link_category":"","show_parent_category":"","link_parent_category":"","show_author":"","link_author":"","show_create_date":"","show_modify_date":"","show_publish_date":"","show_item_navigation":"","show_icons":"","show_print_icon":"","show_email_icon":"","show_vote":"","show_hits":"","show_noauth":"","urls_position":"","alternative_readmore":"","article_layout":"","show_publishing_options":"","show_article_options":"","show_urls_images_backend":"","show_urls_images_frontend":""}', 2, 0, '', '', 1, 22, '{"robots":"","author":"","rights":"","xreference":""}', 0, '*', '');
 
@@ -473,6 +491,8 @@ INSERT INTO `fb_content` (`id`, `asset_id`, `title`, `alias`, `introtext`, `full
 
 --
 -- Struktura tabulky `fb_contentitem_tag_map`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_contentitem_tag_map` (
@@ -500,6 +520,8 @@ TRUNCATE TABLE `fb_contentitem_tag_map`;
 --
 -- Struktura tabulky `fb_content_frontpage`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_content_frontpage` (
   `content_id` int(11) NOT NULL DEFAULT '0',
@@ -524,6 +546,8 @@ INSERT INTO `fb_content_frontpage` (`content_id`, `ordering`) VALUES
 --
 -- Struktura tabulky `fb_content_rating`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_content_rating` (
   `content_id` int(11) NOT NULL DEFAULT '0',
@@ -542,6 +566,8 @@ TRUNCATE TABLE `fb_content_rating`;
 
 --
 -- Struktura tabulky `fb_content_types`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_content_types` (
@@ -589,6 +615,8 @@ INSERT INTO `fb_content_types` (`type_id`, `type_title`, `type_alias`, `table`, 
 --
 -- Struktura tabulky `fb_core_log_searches`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_core_log_searches` (
   `search_term` varchar(128) NOT NULL DEFAULT '',
@@ -604,6 +632,8 @@ TRUNCATE TABLE `fb_core_log_searches`;
 
 --
 -- Struktura tabulky `fb_extensions`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_extensions` (
@@ -793,6 +823,8 @@ INSERT INTO `fb_extensions` (`extension_id`, `name`, `type`, `element`, `folder`
 --
 -- Struktura tabulky `fb_facileforms_compmenus`
 --
+-- Vytvořeno: Pát 27. pro 2013, 10:34
+--
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_compmenus` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -819,6 +851,8 @@ TRUNCATE TABLE `fb_facileforms_compmenus`;
 
 --
 -- Struktura tabulky `fb_facileforms_config`
+--
+-- Vytvořeno: Pát 27. pro 2013, 10:34
 --
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_config` (
@@ -870,6 +904,8 @@ INSERT INTO `fb_facileforms_config` (`id`, `value`) VALUES
 
 --
 -- Struktura tabulky `fb_facileforms_elements`
+--
+-- Vytvořeno: Pát 27. pro 2013, 10:34
 --
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_elements` (
@@ -956,6 +992,8 @@ INSERT INTO `fb_facileforms_elements` (`id`, `form`, `page`, `ordering`, `publis
 
 --
 -- Struktura tabulky `fb_facileforms_forms`
+--
+-- Vytvořeno: Pát 27. pro 2013, 10:34
 --
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_forms` (
@@ -1079,6 +1117,8 @@ INSERT INTO `fb_facileforms_forms` (`id`, `alt_mailfrom`, `alt_fromname`, `mb_al
 --
 -- Struktura tabulky `fb_facileforms_integrator_criteria_fixed`
 --
+-- Vytvořeno: Pát 27. pro 2013, 10:34
+--
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_integrator_criteria_fixed` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1099,6 +1139,8 @@ TRUNCATE TABLE `fb_facileforms_integrator_criteria_fixed`;
 
 --
 -- Struktura tabulky `fb_facileforms_integrator_criteria_form`
+--
+-- Vytvořeno: Pát 27. pro 2013, 10:34
 --
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_integrator_criteria_form` (
@@ -1121,6 +1163,8 @@ TRUNCATE TABLE `fb_facileforms_integrator_criteria_form`;
 --
 -- Struktura tabulky `fb_facileforms_integrator_criteria_joomla`
 --
+-- Vytvořeno: Pát 27. pro 2013, 10:34
+--
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_integrator_criteria_joomla` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1141,6 +1185,8 @@ TRUNCATE TABLE `fb_facileforms_integrator_criteria_joomla`;
 
 --
 -- Struktura tabulky `fb_facileforms_integrator_items`
+--
+-- Vytvořeno: Pát 27. pro 2013, 10:34
 --
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_integrator_items` (
@@ -1163,6 +1209,8 @@ TRUNCATE TABLE `fb_facileforms_integrator_items`;
 --
 -- Struktura tabulky `fb_facileforms_integrator_rules`
 --
+-- Vytvořeno: Pát 27. pro 2013, 10:34
+--
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_integrator_rules` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1184,6 +1232,8 @@ TRUNCATE TABLE `fb_facileforms_integrator_rules`;
 
 --
 -- Struktura tabulky `fb_facileforms_packages`
+--
+-- Vytvořeno: Pát 27. pro 2013, 10:34
 --
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_packages` (
@@ -1217,6 +1267,8 @@ INSERT INTO `fb_facileforms_packages` (`id`, `name`, `version`, `created`, `titl
 
 --
 -- Struktura tabulky `fb_facileforms_pieces`
+--
+-- Vytvořeno: Pát 27. pro 2013, 10:34
 --
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_pieces` (
@@ -1277,6 +1329,8 @@ INSERT INTO `fb_facileforms_pieces` (`id`, `published`, `package`, `name`, `titl
 --
 -- Struktura tabulky `fb_facileforms_records`
 --
+-- Vytvořeno: Pát 27. pro 2013, 10:34
+--
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_records` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1310,6 +1364,8 @@ TRUNCATE TABLE `fb_facileforms_records`;
 
 --
 -- Struktura tabulky `fb_facileforms_scripts`
+--
+-- Vytvořeno: Pát 27. pro 2013, 10:34
 --
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_scripts` (
@@ -1384,6 +1440,8 @@ INSERT INTO `fb_facileforms_scripts` (`id`, `published`, `package`, `name`, `tit
 --
 -- Struktura tabulky `fb_facileforms_subrecords`
 --
+-- Vytvořeno: Pát 27. pro 2013, 10:34
+--
 
 CREATE TABLE IF NOT EXISTS `fb_facileforms_subrecords` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1405,6 +1463,8 @@ TRUNCATE TABLE `fb_facileforms_subrecords`;
 
 --
 -- Struktura tabulky `fb_finder_filters`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_filters` (
@@ -1434,6 +1494,8 @@ TRUNCATE TABLE `fb_finder_filters`;
 
 --
 -- Struktura tabulky `fb_finder_links`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links` (
@@ -1475,6 +1537,8 @@ TRUNCATE TABLE `fb_finder_links`;
 --
 -- Struktura tabulky `fb_finder_links_terms0`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_terms0` (
   `link_id` int(10) unsigned NOT NULL,
@@ -1494,6 +1558,8 @@ TRUNCATE TABLE `fb_finder_links_terms0`;
 
 --
 -- Struktura tabulky `fb_finder_links_terms1`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_terms1` (
@@ -1515,6 +1581,8 @@ TRUNCATE TABLE `fb_finder_links_terms1`;
 --
 -- Struktura tabulky `fb_finder_links_terms2`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_terms2` (
   `link_id` int(10) unsigned NOT NULL,
@@ -1534,6 +1602,8 @@ TRUNCATE TABLE `fb_finder_links_terms2`;
 
 --
 -- Struktura tabulky `fb_finder_links_terms3`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_terms3` (
@@ -1555,6 +1625,8 @@ TRUNCATE TABLE `fb_finder_links_terms3`;
 --
 -- Struktura tabulky `fb_finder_links_terms4`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_terms4` (
   `link_id` int(10) unsigned NOT NULL,
@@ -1574,6 +1646,8 @@ TRUNCATE TABLE `fb_finder_links_terms4`;
 
 --
 -- Struktura tabulky `fb_finder_links_terms5`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_terms5` (
@@ -1595,6 +1669,8 @@ TRUNCATE TABLE `fb_finder_links_terms5`;
 --
 -- Struktura tabulky `fb_finder_links_terms6`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_terms6` (
   `link_id` int(10) unsigned NOT NULL,
@@ -1614,6 +1690,8 @@ TRUNCATE TABLE `fb_finder_links_terms6`;
 
 --
 -- Struktura tabulky `fb_finder_links_terms7`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_terms7` (
@@ -1635,6 +1713,8 @@ TRUNCATE TABLE `fb_finder_links_terms7`;
 --
 -- Struktura tabulky `fb_finder_links_terms8`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_terms8` (
   `link_id` int(10) unsigned NOT NULL,
@@ -1654,6 +1734,8 @@ TRUNCATE TABLE `fb_finder_links_terms8`;
 
 --
 -- Struktura tabulky `fb_finder_links_terms9`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_terms9` (
@@ -1675,6 +1757,8 @@ TRUNCATE TABLE `fb_finder_links_terms9`;
 --
 -- Struktura tabulky `fb_finder_links_termsa`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_termsa` (
   `link_id` int(10) unsigned NOT NULL,
@@ -1694,6 +1778,8 @@ TRUNCATE TABLE `fb_finder_links_termsa`;
 
 --
 -- Struktura tabulky `fb_finder_links_termsb`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_termsb` (
@@ -1715,6 +1801,8 @@ TRUNCATE TABLE `fb_finder_links_termsb`;
 --
 -- Struktura tabulky `fb_finder_links_termsc`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_termsc` (
   `link_id` int(10) unsigned NOT NULL,
@@ -1734,6 +1822,8 @@ TRUNCATE TABLE `fb_finder_links_termsc`;
 
 --
 -- Struktura tabulky `fb_finder_links_termsd`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_termsd` (
@@ -1755,6 +1845,8 @@ TRUNCATE TABLE `fb_finder_links_termsd`;
 --
 -- Struktura tabulky `fb_finder_links_termse`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_termse` (
   `link_id` int(10) unsigned NOT NULL,
@@ -1775,6 +1867,8 @@ TRUNCATE TABLE `fb_finder_links_termse`;
 --
 -- Struktura tabulky `fb_finder_links_termsf`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_links_termsf` (
   `link_id` int(10) unsigned NOT NULL,
@@ -1794,6 +1888,8 @@ TRUNCATE TABLE `fb_finder_links_termsf`;
 
 --
 -- Struktura tabulky `fb_finder_taxonomy`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_taxonomy` (
@@ -1828,6 +1924,8 @@ INSERT INTO `fb_finder_taxonomy` (`id`, `parent_id`, `title`, `state`, `access`,
 --
 -- Struktura tabulky `fb_finder_taxonomy_map`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_taxonomy_map` (
   `link_id` int(10) unsigned NOT NULL,
@@ -1846,6 +1944,8 @@ TRUNCATE TABLE `fb_finder_taxonomy_map`;
 
 --
 -- Struktura tabulky `fb_finder_terms`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_terms` (
@@ -1874,6 +1974,8 @@ TRUNCATE TABLE `fb_finder_terms`;
 
 --
 -- Struktura tabulky `fb_finder_terms_common`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_terms_common` (
@@ -2014,6 +2116,8 @@ INSERT INTO `fb_finder_terms_common` (`term`, `language`) VALUES
 --
 -- Struktura tabulky `fb_finder_tokens`
 --
+-- Vytvořeno: Úte 11. úno 2014, 19:28
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_tokens` (
   `term` varchar(75) NOT NULL,
@@ -2036,6 +2140,8 @@ TRUNCATE TABLE `fb_finder_tokens`;
 
 --
 -- Struktura tabulky `fb_finder_tokens_aggregate`
+--
+-- Vytvořeno: Úte 11. úno 2014, 19:28
 --
 
 CREATE TABLE IF NOT EXISTS `fb_finder_tokens_aggregate` (
@@ -2064,6 +2170,8 @@ TRUNCATE TABLE `fb_finder_tokens_aggregate`;
 --
 -- Struktura tabulky `fb_finder_types`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_finder_types` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -2082,6 +2190,8 @@ TRUNCATE TABLE `fb_finder_types`;
 
 --
 -- Struktura tabulky `fb_languages`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_languages` (
@@ -2123,6 +2233,8 @@ INSERT INTO `fb_languages` (`lang_id`, `lang_code`, `title`, `title_native`, `se
 
 --
 -- Struktura tabulky `fb_menu`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_menu` (
@@ -2233,6 +2345,8 @@ INSERT INTO `fb_menu` (`id`, `menutype`, `title`, `alias`, `note`, `path`, `link
 --
 -- Struktura tabulky `fb_menu_types`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_menu_types` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -2262,6 +2376,8 @@ INSERT INTO `fb_menu_types` (`id`, `menutype`, `title`, `description`) VALUES
 --
 -- Struktura tabulky `fb_messages`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_messages` (
   `message_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -2287,6 +2403,8 @@ TRUNCATE TABLE `fb_messages`;
 --
 -- Struktura tabulky `fb_messages_cfg`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_messages_cfg` (
   `user_id` int(10) unsigned NOT NULL DEFAULT '0',
@@ -2304,6 +2422,8 @@ TRUNCATE TABLE `fb_messages_cfg`;
 
 --
 -- Struktura tabulky `fb_modules`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_modules` (
@@ -2357,7 +2477,7 @@ INSERT INTO `fb_modules` (`id`, `asset_id`, `title`, `note`, `content`, `orderin
 (79, 68, 'Multilanguage status', '', '', 1, 'status', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_multilangstatus', 3, 1, '{"layout":"_:default","moduleclass_sfx":"","cache":"0"}', 1, '*'),
 (86, 69, 'Joomla Version', '', '', 1, 'footer', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_version', 3, 1, '{"format":"short","product":"1","layout":"_:default","moduleclass_sfx":"","cache":"0"}', 1, '*'),
 (87, 54, 'Menu Accordeon CK', '', '', 1, 'top_row3_1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_accordeonck', 1, 0, '{"menutype":"mainmenu","startLevel":"1","endLevel":"0","imgalignement":"none","imagerollprefix":"_hover","imageactiveprefix":"_active","tag_id":"","class_sfx":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"itemid","eventtype":"mouseover","eventtarget":"link","fadetransition":"false","mooduration":"500","mootransition":"swing","defaultopenedid":"","usestyles":"1","theme":"simple","useplusminusimages":"1","imageplus":"images\\/control\\/kormidlo_icon.gif","imageminus":"images\\/control\\/kormidlo_icon.gif","imageposition":"left","menuusemargin":"1","menumargin":"0","menupadding":"0","menuusebackground":"1","menubgcolor1":"#f0f0f0","menuusegradient":"1","menubgcolor2":"#e3e3e3","menuuseroundedcorners":"0","menuroundedcornerstl":"5","menuroundedcornerstr":"5","menuroundedcornersbr":"5","menuroundedcornersbl":"5","menuuseshadow":"0","menushadowcolor":"#444444","menushadowblur":"3","menushadowspread":"0","menushadowoffsetx":"0","menushadowoffsety":"0","menushadowinset":"0","menuuseborders":"0","menubordercolor":"#efefef","menuborderwidth":"1","level1linkusefont":"1","level1linkfontsize":"12px","level1linkfontcolor":"","level1linkfontcolorhover":"","level1linkdescfontsize":"10px","level1linkdescfontcolor":"","level1linkusemargin":"1","level1linkmargin":"0","level1linkpadding":"0","level1linkusebackground":"1","level1linkbgcolor1":"","level1linkusegradient":"1","level1linkbgcolor2":"","level1linkuseroundedcorners":"1","level1linkroundedcornerstl":"0","level1linkroundedcornerstr":"0","level1linkroundedcornersbr":"0","level1linkroundedcornersbl":"0","level1linkuseshadow":"1","level1linkshadowcolor":"","level1linkshadowblur":"0","level1linkshadowspread":"0","level1linkshadowoffsetx":"0","level1linkshadowoffsety":"0","level1linkshadowinset":"0","level1linkuseborders":"0","level1linkbordercolor":"","level1linkborderwidth":"1","level2linkusefont":"1","level2linkfontsize":"12px","level2linkfontcolor":"","level2linkfontcolorhover":"","level2linkdescfontsize":"10px","level2linkdescfontcolor":"","level2linkusemargin":"1","level2linkmargin":"0","level2linkpadding":"0","level2linkusebackground":"1","level2linkbgcolor1":"","level2linkusegradient":"1","level2linkbgcolor2":"","level2linkuseroundedcorners":"1","level2linkroundedcornerstl":"0","level2linkroundedcornerstr":"0","level2linkroundedcornersbr":"0","level2linkroundedcornersbl":"0","level2linkuseshadow":"1","level2linkshadowcolor":"","level2linkshadowblur":"0","level2linkshadowspread":"0","level2linkshadowoffsetx":"0","level2linkshadowoffsety":"0","level2linkshadowinset":"0","level2linkuseborders":"1","level2linkbordercolor":"","level2linkborderwidth":"1","level3linkusefont":"1","level3linkfontsize":"12px","level3linkfontcolor":"","level3linkfontcolorhover":"","level3linkdescfontsize":"10px","level3linkdescfontcolor":"","level3linkusemargin":"1","level3linkmargin":"0","level3linkpadding":"0","level3linkusebackground":"1","level3linkbgcolor1":"","level3linkusegradient":"1","level3linkbgcolor2":"","level3linkuseroundedcorners":"1","level3linkroundedcornerstl":"0","level3linkroundedcornerstr":"0","level3linkroundedcornersbr":"0","level3linkroundedcornersbl":"0","level3linkuseshadow":"1","level3linkshadowcolor":"","level3linkshadowblur":"0","level3linkshadowspread":"0","level3linkshadowoffsetx":"0","level3linkshadowoffsety":"0","level3linkshadowinset":"0","level3linkuseborders":"1","level3linkbordercolor":"","level3linkborderwidth":"1","thirdparty":"none","usehikashopimages":"0","usehikashopsuffix":"0","hikashopimagesuffix":"_mini","hikashopcategoryroot":"0","hikashopcategorydepth":"0","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
-(88, 56, 'ARI Image Slider', '', '', 1, 'top_row2_2', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ariimageslider', 1, 0, '{"includeJQuery":"1","loadJQueryMethod":"google_cdn","jQueryVer":"1.8.2","noConflict":"1","loadMethod":"load","moduleclass_sfx":"","width":"770","height":"250","responsive":"1","linkTarget":"_self","customLinkTarget":"","theme":"default","customstyle":"","lightboxEngine":"","lightbox_width":"550","lightbox_height":"400","lightbox_grouping":"1","lightbox_bgColor":"","fixTransparentBg":"0","opt_disableClick":"1","opt_effect":"fade","opt_slices":"15","opt_boxCols":"8","opt_boxRows":"4","opt_animSpeed":"500","opt_pauseTime":"3000","opt_startSlide":"1","opt_randomStart":"0","showNav":"0","opt_controlNav":"0","opt_keyboardNav":"0","opt_pauseOnHover":"0","opt_manualAdvance":"0","opt_stopOnEnd":"0","i18n":"0","descrFile":"ariimageslider.ini","defaultDescription":"","defaultLink":"","imgNumber":"0","sortBy":"","sortDir":"asc","subdirLevel":"0","subdir":"0","path":"\\\\images\\\\slider","imglist_useThumbs":"0","imglist_thumbWidth":"150","imglist_thumbHeight":"","imglist_thumbPath":"","opt_controlNavThumbs":"0","imglist_navThumbWidth":"75","imglist_navThumbHeight":"","imglist_navThumbPath":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"Shape5_vertex-round_box_top_row"}', 0, '*'),
+(88, 56, 'ARI Image Slider', '', '', 1, 'top_row2_2', 683, '2014-01-03 22:12:05', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_ariimageslider', 1, 0, '{"includeJQuery":"1","loadJQueryMethod":"google_cdn","jQueryVer":"1.8.2","noConflict":"1","loadMethod":"load","moduleclass_sfx":"","width":"770","height":"250","responsive":"1","linkTarget":"_self","customLinkTarget":"","theme":"default","customstyle":"","lightboxEngine":"","lightbox_width":"550","lightbox_height":"400","lightbox_grouping":"1","lightbox_bgColor":"","fixTransparentBg":"0","opt_disableClick":"1","opt_effect":"fade","opt_slices":"15","opt_boxCols":"8","opt_boxRows":"4","opt_animSpeed":"500","opt_pauseTime":"3000","opt_startSlide":"1","opt_randomStart":"0","showNav":"0","opt_controlNav":"0","opt_keyboardNav":"0","opt_pauseOnHover":"0","opt_manualAdvance":"0","opt_stopOnEnd":"1","i18n":"0","descrFile":"ariimageslider.ini","defaultDescription":"","defaultLink":"","imgNumber":"0","sortBy":"","sortDir":"asc","subdirLevel":"0","subdir":"0","path":"\\\\images\\\\slider","imglist_useThumbs":"0","imglist_thumbWidth":"150","imglist_thumbHeight":"","imglist_thumbPath":"","opt_controlNavThumbs":"0","imglist_navThumbWidth":"75","imglist_navThumbHeight":"","imglist_navThumbPath":"","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"Shape5_vertex-round_box_top_row"}', 0, '*'),
 (89, 57, 'SlideBar class=hide_mobile', '', '', 1, 'bottom_row3_1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 1, 'mod_slidebar', 1, 0, '{"loadmodule":"slidebar","jslibrary":"slidebar-j","loadlibraries":"1","autoopen":"0","shadowradius":"5","shadowx":"0","shadowy":"0","shadowspread":"0","shadowcolor":"rgba(0,0,0,1)","toppos":"160","pos":"right","concolor":"rgba(221,221,221,1)","concolorgrad1":"rgba(190,190,190,0.8)","concolorgrad2":"rgba(221,221,221,1)","cornerradius":"15","autosizing":"On","conwidth":"350","conheight":"520","conpaddingleft":"5","conpaddingright":"5","conpaddingtop":"5","conpaddingbottom":"5","zindex":"9000","speed":"500","theme":"sleekWhite","type":"png","slidevertical":"fixed","widthdebug":"1","retina":"On","imgalt":"Popt\\u00e1vka","moduleclass_sfx":"_invisible","cache":"1","cache_time":"900","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (90, 59, 'Header', '', '<h1 style="text-align: left;"><em><strong>S námi není žádný ostrov vzdálený</strong></em></h1>', 1, 'banner', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, 'mod_custom', 1, 0, '{"prepare_content":"0","backgroundimage":"","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
 (91, 62, 'Novinky', '', '', 1, 'top_row2_1', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', -2, 'mod_articles_latest', 1, 0, '{"catid":["8"],"count":"2","show_featured":"","ordering":"c_dsc","user_id":"0","layout":"_:default","moduleclass_sfx":"","cache":"1","cache_time":"900","cachemode":"static","module_tag":"div","bootstrap_size":"0","header_tag":"h3","header_class":"","style":"0"}', 0, '*'),
@@ -2374,6 +2494,8 @@ INSERT INTO `fb_modules` (`id`, `asset_id`, `title`, `note`, `content`, `orderin
 
 --
 -- Struktura tabulky `fb_modules_menu`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_modules_menu` (
@@ -2428,6 +2550,8 @@ INSERT INTO `fb_modules_menu` (`moduleid`, `menuid`) VALUES
 --
 -- Struktura tabulky `fb_newsfeeds`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_newsfeeds` (
   `catid` int(11) NOT NULL DEFAULT '0',
@@ -2480,6 +2604,8 @@ TRUNCATE TABLE `fb_newsfeeds`;
 --
 -- Struktura tabulky `fb_overrider`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_overrider` (
   `id` int(10) NOT NULL AUTO_INCREMENT COMMENT 'Primary Key',
@@ -2498,6 +2624,8 @@ TRUNCATE TABLE `fb_overrider`;
 
 --
 -- Struktura tabulky `fb_postinstall_messages`
+--
+-- Vytvořeno: Úte 17. pro 2013, 19:16
 --
 
 CREATE TABLE IF NOT EXISTS `fb_postinstall_messages` (
@@ -2537,6 +2665,8 @@ INSERT INTO `fb_postinstall_messages` (`postinstall_message_id`, `extension_id`,
 --
 -- Struktura tabulky `fb_redirect_links`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_redirect_links` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -2563,6 +2693,8 @@ TRUNCATE TABLE `fb_redirect_links`;
 --
 -- Struktura tabulky `fb_schemas`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_schemas` (
   `extension_id` int(11) NOT NULL,
@@ -2586,6 +2718,8 @@ INSERT INTO `fb_schemas` (`extension_id`, `version_id`) VALUES
 
 --
 -- Struktura tabulky `fb_session`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_session` (
@@ -2611,14 +2745,14 @@ TRUNCATE TABLE `fb_session`;
 --
 
 INSERT INTO `fb_session` (`session_id`, `client_id`, `guest`, `time`, `data`, `userid`, `username`) VALUES
-('a825bk63vd95aid4glbbvcmdd1', 0, 1, '1388782500', '__default|a:10:{s:15:"session.counter";i:134;s:19:"session.timer.start";i:1388688399;s:18:"session.timer.last";i:1388781659;s:17:"session.timer.now";i:1388782499;s:22:"session.client.browser";s:65:"Mozilla/5.0 (Windows NT 5.1; rv:26.0) Gecko/20100101 Firefox/26.0";s:8:"registry";O:9:"JRegistry":1:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}}s:4:"user";O:5:"JUser":24:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:2:"13";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:10:"\\0\\0\\0_params";O:9:"JRegistry":1:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}}s:14:"\\0\\0\\0_authGroups";a:1:{i:0;s:1:"1";}s:14:"\\0\\0\\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}s:24:"ff_editableMod94poptavka";i:0;s:33:"ff_editable_overrideMod94poptavka";i:0;s:13:"session.token";s:32:"80271e1df2f7aeef8200ebc60f37a048";}securimage_code_tries|a:1:{s:7:"default";i:0;}securimage_code_disp|a:1:{s:7:"default";s:6:"retime";}securimage_code_value|a:1:{s:7:"default";s:6:"retime";}securimage_code_ctime|a:1:{s:7:"default";i:1388779139;}', 0, ''),
-('kfhrfeshpr3mcge9khq33hnjq0', 1, 1, '1388783221', '__default|a:8:{s:15:"session.counter";i:1;s:19:"session.timer.start";i:1388783221;s:18:"session.timer.last";i:1388783221;s:17:"session.timer.now";i:1388783221;s:22:"session.client.browser";s:65:"Mozilla/5.0 (Windows NT 5.1; rv:26.0) Gecko/20100101 Firefox/26.0";s:8:"registry";O:9:"JRegistry":1:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}}s:4:"user";O:5:"JUser":24:{s:9:"\\0\\0\\0isRoot";N;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:2:"13";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:10:"\\0\\0\\0_params";O:9:"JRegistry":1:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}}s:14:"\\0\\0\\0_authGroups";N;s:14:"\\0\\0\\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}s:13:"session.token";s:32:"d8d4dbc6c6d6d4d15e623ab666c9c71c";}', 0, ''),
-('mgjbuknovvoc6e3u1u2cptgb56', 0, 1, '1388783045', '__default|a:10:{s:15:"session.counter";i:28;s:19:"session.timer.start";i:1388769503;s:18:"session.timer.last";i:1388782204;s:17:"session.timer.now";i:1388783044;s:22:"session.client.browser";s:101:"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36";s:8:"registry";O:9:"JRegistry":1:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}}s:4:"user";O:5:"JUser":24:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:2:"13";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:10:"\\0\\0\\0_params";O:9:"JRegistry":1:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}}s:14:"\\0\\0\\0_authGroups";a:1:{i:0;s:1:"1";}s:14:"\\0\\0\\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}s:24:"ff_editableMod94poptavka";i:0;s:33:"ff_editable_overrideMod94poptavka";i:0;s:13:"session.token";s:32:"88d995f96f78d9976790a20fd3538e87";}securimage_code_tries|a:1:{s:7:"default";i:0;}securimage_code_disp|a:1:{s:7:"default";s:6:"wallah";}securimage_code_value|a:1:{s:7:"default";s:6:"wallah";}securimage_code_ctime|a:1:{s:7:"default";i:1388777164;}', 0, '');
+('qc3tjcf9ii67ckr9l7uu54kp95', 0, 1, '1392146934', '__default|a:10:{s:15:"session.counter";i:9;s:19:"session.timer.start";i:1392141044;s:18:"session.timer.last";i:1392146093;s:17:"session.timer.now";i:1392146933;s:22:"session.client.browser";s:65:"Mozilla/5.0 (Windows NT 5.1; rv:27.0) Gecko/20100101 Firefox/27.0";s:8:"registry";O:9:"JRegistry":1:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}}s:4:"user";O:5:"JUser":24:{s:9:"\\0\\0\\0isRoot";b:0;s:2:"id";i:0;s:4:"name";N;s:8:"username";N;s:5:"email";N;s:8:"password";N;s:14:"password_clear";s:0:"";s:5:"block";N;s:9:"sendEmail";i:0;s:12:"registerDate";N;s:13:"lastvisitDate";N;s:10:"activation";N;s:6:"params";N;s:6:"groups";a:1:{i:0;s:2:"13";}s:5:"guest";i:1;s:13:"lastResetTime";N;s:10:"resetCount";N;s:10:"\\0\\0\\0_params";O:9:"JRegistry":1:{s:7:"\\0\\0\\0data";O:8:"stdClass":0:{}}s:14:"\\0\\0\\0_authGroups";a:1:{i:0;s:1:"1";}s:14:"\\0\\0\\0_authLevels";a:2:{i:0;i:1;i:1;i:1;}s:15:"\\0\\0\\0_authActions";N;s:12:"\\0\\0\\0_errorMsg";N;s:10:"\\0\\0\\0_errors";a:0:{}s:3:"aid";i:0;}s:24:"ff_editableMod94poptavka";i:0;s:33:"ff_editable_overrideMod94poptavka";i:0;s:13:"session.token";s:32:"00e23d8c788ab364beeb8ed4135cf64f";}securimage_code_tries|a:1:{s:7:"default";i:0;}securimage_code_disp|a:1:{s:7:"default";s:6:"borate";}securimage_code_value|a:1:{s:7:"default";s:6:"borate";}securimage_code_ctime|a:1:{s:7:"default";i:1392141053;}', 0, '');
 
 -- --------------------------------------------------------
 
 --
 -- Struktura tabulky `fb_tags`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_tags` (
@@ -2679,6 +2813,8 @@ INSERT INTO `fb_tags` (`id`, `parent_id`, `lft`, `rgt`, `level`, `path`, `title`
 --
 -- Struktura tabulky `fb_template_styles`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_template_styles` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -2710,6 +2846,8 @@ INSERT INTO `fb_template_styles` (`id`, `template`, `client_id`, `home`, `title`
 --
 -- Struktura tabulky `fb_ucm_base`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_ucm_base` (
   `ucm_id` int(10) unsigned NOT NULL,
@@ -2731,6 +2869,8 @@ TRUNCATE TABLE `fb_ucm_base`;
 
 --
 -- Struktura tabulky `fb_ucm_content`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_ucm_content` (
@@ -2791,6 +2931,8 @@ TRUNCATE TABLE `fb_ucm_content`;
 --
 -- Struktura tabulky `fb_ucm_history`
 --
+-- Vytvořeno: Úte 17. pro 2013, 19:16
+--
 
 CREATE TABLE IF NOT EXISTS `fb_ucm_history` (
   `version_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -2806,7 +2948,7 @@ CREATE TABLE IF NOT EXISTS `fb_ucm_history` (
   PRIMARY KEY (`version_id`),
   KEY `idx_ucm_item_id` (`ucm_type_id`,`ucm_item_id`),
   KEY `idx_save_date` (`save_date`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=23 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=27 ;
 
 --
 -- Vyprázdnit tabulku před vkládáním `fb_ucm_history`
@@ -2841,12 +2983,19 @@ INSERT INTO `fb_ucm_history` (`version_id`, `ucm_item_id`, `ucm_type_id`, `versi
 (19, 6, 1, '', '2013-12-30 22:59:26', 683, 8214, '0148a8dbc236a3684c9b02b6ae43e7e3a334e007', '{"id":6,"asset_id":73,"title":"\\u0158ECKO (2)","alias":"recko-2","introtext":"<p style=\\"margin-bottom: 0cm; text-align: justify;\\">Krajina pln\\u00e1 d\\u00e1vn\\u00e9 historie, p\\u0159\\u00edrody a vst\\u0159\\u00edcn\\u00fdch lid\\u00ed - to je \\u0158ecko! Ostrovy v oblasti ji\\u017en\\u00ed Evropy v\\u00e1m nab\\u00eddnou jedine\\u010dn\\u00e9 p\\u0159\\u00edrodn\\u00ed scen\\u00e9rie, kdy se strm\\u00e9 b\\u00edl\\u00e9 sk\\u00e1ly snoub\\u00ed s n\\u00e1dhern\\u011b azurov\\u011b modr\\u00fdm mo\\u0159em. A\\u017e p\\u0159ekr\\u00e1sn\\u011b k\\u00fd\\u010dovit\\u00e9 jsou v\\u00fdhledy na m\\u011bste\\u010dka pln\\u00e1 \\u010dist\\u00fdch b\\u00edl\\u00fdch domk\\u016f s modr\\u00fdmi okenicemi a st\\u0159echami. Kombinace b\\u00edl\\u00e9 a k modr\\u00e9 barvy \\u0158ecku zkr\\u00e1tka pat\\u0159\\u00ed. Koneckonc\\u016f, jsou to barvy \\u0159eck\\u00e9 st\\u00e1tn\\u00ed vlajky. Modr\\u00e1 barva je symbolem mo\\u0159e a bezobla\\u010dn\\u00e9 ji\\u017en\\u00ed oblohy. B\\u00edl\\u00e1 barva p\\u0159ipom\\u00edn\\u00e1 \\u010distotu jejich z\\u00e1m\\u011br\\u016f v boji za svobodu a nez\\u00e1vislost. K\\u0159\\u00ed\\u017e ve \\u010dtverci je pak odkazem na v\\u00edru a \\u0159eckou zbo\\u017enost.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\">S n\\u00e1mi pozn\\u00e1te jedine\\u010dn\\u00e9 \\u0159eck\\u00e9 ostrovy nejen v J\\u00f3nsk\\u00e9m a Egejsk\\u00e9m mo\\u0159i. Ka\\u017ed\\u00fd z ostrov\\u016f (kter\\u00fdch je v\\u00edce ne\\u017e 2000) v\\u00e1s p\\u0159iv\\u00edt\\u00e1 svou jedine\\u010dnou architekturou. Na v\\u011bt\\u0161in\\u011b z nich je mo\\u017en\\u00e9 si vyp\\u016fj\\u010dit katamaran&nbsp;a vydat se prozkoumat ostrovy, a p\\u0159edev\\u0161\\u00edm z\\u00e1toky, kter\\u00e9 nejsou z pevniny dostupn\\u00e9. <span style=\\"color: #00ae00;\\">Nalo\\u010fte se k n\\u00e1m a nechte na sebe d\\u00fdchnout jejich mystickou atmosf\\u00e9ru, daleko od pr\\u016fmyslu a neust\\u00e1l\\u00e9ho shonu.&nbsp;<\\/span><span style=\\"color: #00ae00;\\"><span style=\\"color: #ff0000;\\">(odkaz \\/ proklik na mapu)<\\/span><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-size: 0.8em;\\">&nbsp;<\\/span><span style=\\"color: #00ae00;\\">*<\\/span><span style=\\"color: #00ae00;\\">LEFKADA<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #00ae00;\\">*ZAKYNTHOS<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\" align=\\"CENTER\\"><span style=\\"color: #00ae00;\\"><strong>FOTKA<\\/strong><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\" align=\\"CENTER\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\" align=\\"CENTER\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">\\u0158ecko je st\\u00e1t, kter\\u00fd je ve sv\\u00e9 ji\\u017en\\u00ed \\u010d\\u00e1sti tvo\\u0159en velk\\u00fdm mno\\u017estv\\u00edm men\\u0161\\u00edch a v\\u011bt\\u0161\\u00edch ostrov\\u016f. Zdej\\u0161\\u00ed gastronomie je tedy p\\u0159edem dan\\u00e1. \\u0160\\u0165avnat\\u00e1 zelenina, \\u010derstv\\u00e9 mo\\u0159sk\\u00e9 plody a ryby, vo\\u0148av\\u00e9 bylinky a samoz\\u0159ejm\\u011b olivov\\u00fd olej. To jsou hlavn\\u00ed suroviny, kter\\u00e9 v m\\u00edstn\\u00edch Tavern\\u00e1ch (restaurac\\u00edch) ochutn\\u00e1te. Slovo GASTRONIMIE je \\u0159eck\\u00e9ho p\\u016fvodu \\u2013 nen\\u00ed pro to divu, \\u017ee jeho kuchyn\\u011b je sv\\u011btov\\u011b proslul\\u00e1.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">Ka\\u017ed\\u00fd z ostrov\\u016f nab\\u00edz\\u00ed n\\u011bco jin\\u00e9ho. Je jen na v\\u00e1s, kde a jak se rozhodnete tr\\u00e1vit va\\u0161\\u00ed dovolenou. Jsou tu pl\\u00e1\\u017ee, kde se potk\\u00e1te s civilizac\\u00ed, kde jsou pozvoln\\u00fdm vstupem do mo\\u0159e lemov\\u00e1ny hotely. Dal\\u0161\\u00ed jsou pak pr\\u00e1zdn\\u00e9 a klidn\\u00e9, kde se maxim\\u00e1ln\\u011b potk\\u00e1te s dal\\u0161\\u00ed pos\\u00e1dkou. Ostrovn\\u00ed pl\\u00e1\\u017ee maj\\u00ed jednu (ne)v\\u00fdhodu - v p\\u0159\\u00edpad\\u011b velk\\u00fdch vln jsou chr\\u00e1n\\u011bny jin\\u00fdmi bl\\u00edzk\\u00fdmi ostrovy. Kotvit se d\\u00e1 i v z\\u00e1tok\\u00e1ch lemovan\\u00fdch strm\\u00fdmi sk\\u00e1lami, kde je k p\\u0159\\u00edstup pouze po schodech shora.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">LEFKADA<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Ostrov<\\/strong> Lefkada le\\u017e\\u00ed u severoz\\u00e1padn\\u00ed \\u010d\\u00e1sti \\u0159eck\\u00e9 pevniny, pod ostrovem Korfu. Od pevniny je vzd\\u00e1len pouze 1 km a je s n\\u00ed spojen pomoc\\u00ed zvedac\\u00edho mostu, na jeho\\u017e konci v\\u00e1s p\\u0159iv\\u00edt\\u00e1 hlavn\\u00ed m\\u011bsto Lefkada, s polovinou obyvatelstva ostrova. Tedy s po\\u010dtem p\\u0159es 10 000.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Na <\\/strong>cel\\u00e9m ostrov\\u011b se rozkl\\u00e1d\\u00e1 jedine\\u010dn\\u00e9 poho\\u0159\\u00ed Stavrotas, jeho\\u017e vrcholy p\\u0159esahuj\\u00ed v\\u00fd\\u0161ky 1 000 m. Panorama vrcholk\\u016f hor a neuv\\u011b\\u0159iteln\\u011b modr\\u00e9ho mo\\u0159e je nezapomenuteln\\u00e9.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Pl\\u00e1\\u017ee<\\/strong> jsou v\\u011bt\\u0161inou lemov\\u00e1ny prudk\\u00fdmi v\\u00e1pencov\\u00fdmi skalisky s krasov\\u00fdmi jeskyn\\u011bmi. Mo\\u0159e je od v\\u00e1pencov\\u00e9ho p\\u00edsku zbarveno do n\\u00e1dhern\\u00e9ho odst\\u00ednu modr\\u00e9 barvy.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">ZAKYNTHOS<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Ostrov<\\/strong> Zakynthos, kter\\u00fd s v\\u00edce jak 41 000 obyvateli je t\\u0159et\\u00ed nejv\\u011bt\\u0161\\u00ed ostrov v Jonsk\\u00e9m mo\\u0159i, le\\u017e\\u00ed u severoz\\u00e1padn\\u00ed \\u010d\\u00e1sti \\u0159eck\\u00e9 pevniny, vzd\\u00e1len\\u00e9 16 km. Hlavn\\u00edm m\\u011bstem je Zakynthos (kde \\u017eije okolo 16 000 obyvatel), kter\\u00fd je d\\u016fle\\u017eit\\u00fdm p\\u0159\\u00edstavem a v bl\\u00edzkosti m\\u011bsta le\\u017e\\u00ed i leti\\u0161t\\u011b.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Jako<\\/strong> v\\u011bt\\u0161ina I\\u00f3nsk\\u00fdch ostrov\\u016f je hornat\\u00fd. Jeho vrcholy jsou ale ni\\u017e\\u0161\\u00ed ne\\u017e na Lefkad\\u011b (nejvy\\u0161\\u0161\\u00ed m\\u011b\\u0159\\u00ed 758 m) a ve v\\u00fdchodn\\u00ed \\u010d\\u00e1sti p\\u0159eva\\u017euj\\u00ed sp\\u00ed\\u0161e rovinat\\u00e9 plochy. Na ostrov\\u011b \\u017eije vz\\u00e1cn\\u00fd druh \\u017eelv, kter\\u00e9 naleznte vyobrazeny snad v\\u0161ude a na v\\u0161em. P\\u0159ed turisty v\\u0161ak nejsou dostate\\u010dn\\u011b chr\\u00e1n\\u011bn\\u00e9 a hroz\\u00ed jejich vyhynut\\u00ed.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Za <\\/strong>prohl\\u00e9dnut\\u00ed na ostrov\\u011b stoj\\u00ed pl\\u00e1\\u017ee na severu ostrova s n\\u00e1zvem Navagio, kde v\\u00e1s uchv\\u00e1t\\u00ed prudk\\u00e9 sk\\u00e1ly nad zlatav\\u00fdm p\\u00edskem mal\\u00fdch pl\\u00e1\\u017e\\u00ed a pl\\u00e1\\u017ei\\u010dek a opravdu neuv\\u011b\\u0159iteln\\u00e9 odst\\u00edny modr\\u00e9 barvy mo\\u0159e. &nbsp;<\\/p>","fulltext":"","state":0,"catid":"9","created":"2013-12-26 23:35:32","created_by":"683","created_by_alias":"","modified":"2013-12-26 23:49:23","modified_by":null,"checked_out":null,"checked_out_time":null,"publish_up":"2013-12-26 23:35:32","publish_down":"","images":"{\\"image_intro\\":\\"\\",\\"float_intro\\":\\"\\",\\"image_intro_alt\\":\\"\\",\\"image_intro_caption\\":\\"\\",\\"image_fulltext\\":\\"\\",\\"float_fulltext\\":\\"\\",\\"image_fulltext_alt\\":\\"\\",\\"image_fulltext_caption\\":\\"\\"}","urls":"{\\"urla\\":false,\\"urlatext\\":\\"\\",\\"targeta\\":\\"\\",\\"urlb\\":false,\\"urlbtext\\":\\"\\",\\"targetb\\":\\"\\",\\"urlc\\":false,\\"urlctext\\":\\"\\",\\"targetc\\":\\"\\"}","attribs":"{\\"show_title\\":\\"\\",\\"link_titles\\":\\"\\",\\"show_tags\\":\\"\\",\\"show_intro\\":\\"\\",\\"info_block_position\\":\\"\\",\\"show_category\\":\\"\\",\\"link_category\\":\\"\\",\\"show_parent_category\\":\\"\\",\\"link_parent_category\\":\\"\\",\\"show_author\\":\\"\\",\\"link_author\\":\\"\\",\\"show_create_date\\":\\"\\",\\"show_modify_date\\":\\"\\",\\"show_publish_date\\":\\"\\",\\"show_item_navigation\\":\\"\\",\\"show_icons\\":\\"\\",\\"show_print_icon\\":\\"\\",\\"show_email_icon\\":\\"\\",\\"show_vote\\":\\"\\",\\"show_hits\\":\\"\\",\\"show_noauth\\":\\"\\",\\"urls_position\\":\\"\\",\\"alternative_readmore\\":\\"\\",\\"article_layout\\":\\"\\",\\"show_publishing_options\\":\\"\\",\\"show_article_options\\":\\"\\",\\"show_urls_images_backend\\":\\"\\",\\"show_urls_images_frontend\\":\\"\\"}","version":1,"ordering":null,"metakey":"","metadesc":"","access":"1","hits":null,"metadata":"{\\"robots\\":\\"\\",\\"author\\":\\"\\",\\"rights\\":\\"\\",\\"xreference\\":\\"\\"}","featured":"0","language":"*","xreference":""}', 0),
 (20, 4, 1, '', '2013-12-30 23:01:08', 683, 8247, '9b50996d5c344ff1a5a063e51c3e40de7f133156', '{"id":4,"asset_id":"67","title":"\\u0158ECKO","alias":"recko","introtext":"<p style=\\"margin-bottom: 0cm; text-align: justify;\\">Krajina pln\\u00e1 d\\u00e1vn\\u00e9 historie, p\\u0159\\u00edrody a vst\\u0159\\u00edcn\\u00fdch lid\\u00ed - to je \\u0158ecko! Ostrovy v oblasti ji\\u017en\\u00ed Evropy v\\u00e1m nab\\u00eddnou jedine\\u010dn\\u00e9 p\\u0159\\u00edrodn\\u00ed scen\\u00e9rie, kdy se strm\\u00e9 b\\u00edl\\u00e9 sk\\u00e1ly snoub\\u00ed s n\\u00e1dhern\\u011b azurov\\u011b modr\\u00fdm mo\\u0159em. A\\u017e p\\u0159ekr\\u00e1sn\\u011b k\\u00fd\\u010dovit\\u00e9 jsou v\\u00fdhledy na m\\u011bste\\u010dka pln\\u00e1 \\u010dist\\u00fdch b\\u00edl\\u00fdch domk\\u016f s modr\\u00fdmi okenicemi a st\\u0159echami. Kombinace b\\u00edl\\u00e9 a k modr\\u00e9 barvy \\u0158ecku zkr\\u00e1tka pat\\u0159\\u00ed. Koneckonc\\u016f, jsou to barvy \\u0159eck\\u00e9 st\\u00e1tn\\u00ed vlajky. Modr\\u00e1 barva je symbolem mo\\u0159e a bezobla\\u010dn\\u00e9 ji\\u017en\\u00ed oblohy. B\\u00edl\\u00e1 barva p\\u0159ipom\\u00edn\\u00e1 \\u010distotu jejich z\\u00e1m\\u011br\\u016f v boji za svobodu a nez\\u00e1vislost. K\\u0159\\u00ed\\u017e ve \\u010dtverci je pak odkazem na v\\u00edru a \\u0159eckou zbo\\u017enost.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\">S n\\u00e1mi pozn\\u00e1te jedine\\u010dn\\u00e9 \\u0159eck\\u00e9 ostrovy nejen v J\\u00f3nsk\\u00e9m a Egejsk\\u00e9m mo\\u0159i. Ka\\u017ed\\u00fd z ostrov\\u016f (kter\\u00fdch je v\\u00edce ne\\u017e 2000) v\\u00e1s p\\u0159iv\\u00edt\\u00e1 svou jedine\\u010dnou architekturou. Na v\\u011bt\\u0161in\\u011b z nich je mo\\u017en\\u00e9 si vyp\\u016fj\\u010dit katamaran&nbsp;a vydat se prozkoumat ostrovy, a p\\u0159edev\\u0161\\u00edm z\\u00e1toky, kter\\u00e9 nejsou z pevniny dostupn\\u00e9. <span style=\\"color: #00ae00;\\">Nalo\\u010fte se k n\\u00e1m a nechte na sebe d\\u00fdchnout jejich mystickou atmosf\\u00e9ru, daleko od pr\\u016fmyslu a neust\\u00e1l\\u00e9ho shonu.&nbsp;<\\/span><span style=\\"color: #00ae00;\\"><span style=\\"color: #ff0000;\\">(odkaz \\/ proklik na mapu)<\\/span><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-size: 0.8em;\\">&nbsp;<\\/span><span style=\\"color: #00ae00;\\">*<\\/span><span style=\\"color: #00ae00;\\">LEFKADA<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #00ae00;\\">*ZAKYNTHOS<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\" align=\\"CENTER\\"><span style=\\"color: #00ae00;\\"><strong>FOTKA<\\/strong><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\" align=\\"CENTER\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\" align=\\"CENTER\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">\\u0158ecko je st\\u00e1t, kter\\u00fd je ve sv\\u00e9 ji\\u017en\\u00ed \\u010d\\u00e1sti tvo\\u0159en velk\\u00fdm mno\\u017estv\\u00edm men\\u0161\\u00edch a v\\u011bt\\u0161\\u00edch ostrov\\u016f. Zdej\\u0161\\u00ed gastronomie je tedy p\\u0159edem dan\\u00e1. \\u0160\\u0165avnat\\u00e1 zelenina, \\u010derstv\\u00e9 mo\\u0159sk\\u00e9 plody a ryby, vo\\u0148av\\u00e9 bylinky a samoz\\u0159ejm\\u011b olivov\\u00fd olej. To jsou hlavn\\u00ed suroviny, kter\\u00e9 v m\\u00edstn\\u00edch Tavern\\u00e1ch (restaurac\\u00edch) ochutn\\u00e1te. Slovo GASTRONIMIE je \\u0159eck\\u00e9ho p\\u016fvodu \\u2013 nen\\u00ed pro to divu, \\u017ee jeho kuchyn\\u011b je sv\\u011btov\\u011b proslul\\u00e1.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">Ka\\u017ed\\u00fd z ostrov\\u016f nab\\u00edz\\u00ed n\\u011bco jin\\u00e9ho. Je jen na v\\u00e1s, kde a jak se rozhodnete tr\\u00e1vit va\\u0161\\u00ed dovolenou. Jsou tu pl\\u00e1\\u017ee, kde se potk\\u00e1te s civilizac\\u00ed, kde jsou pozvoln\\u00fdm vstupem do mo\\u0159e lemov\\u00e1ny hotely. Dal\\u0161\\u00ed jsou pak pr\\u00e1zdn\\u00e9 a klidn\\u00e9, kde se maxim\\u00e1ln\\u011b potk\\u00e1te s dal\\u0161\\u00ed pos\\u00e1dkou. Ostrovn\\u00ed pl\\u00e1\\u017ee maj\\u00ed jednu (ne)v\\u00fdhodu - v p\\u0159\\u00edpad\\u011b velk\\u00fdch vln jsou chr\\u00e1n\\u011bny jin\\u00fdmi bl\\u00edzk\\u00fdmi ostrovy. Kotvit se d\\u00e1 i v z\\u00e1tok\\u00e1ch lemovan\\u00fdch strm\\u00fdmi sk\\u00e1lami, kde je k p\\u0159\\u00edstup pouze po schodech shora.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">LEFKADA<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Ostrov<\\/strong> Lefkada le\\u017e\\u00ed u severoz\\u00e1padn\\u00ed \\u010d\\u00e1sti \\u0159eck\\u00e9 pevniny, pod ostrovem Korfu. Od pevniny je vzd\\u00e1len pouze 1 km a je s n\\u00ed spojen pomoc\\u00ed zvedac\\u00edho mostu, na jeho\\u017e konci v\\u00e1s p\\u0159iv\\u00edt\\u00e1 hlavn\\u00ed m\\u011bsto Lefkada, s polovinou obyvatelstva ostrova. Tedy s po\\u010dtem p\\u0159es 10 000.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Na <\\/strong>cel\\u00e9m ostrov\\u011b se rozkl\\u00e1d\\u00e1 jedine\\u010dn\\u00e9 poho\\u0159\\u00ed Stavrotas, jeho\\u017e vrcholy p\\u0159esahuj\\u00ed v\\u00fd\\u0161ky 1 000 m. Panorama vrcholk\\u016f hor a neuv\\u011b\\u0159iteln\\u011b modr\\u00e9ho mo\\u0159e je nezapomenuteln\\u00e9.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Pl\\u00e1\\u017ee<\\/strong> jsou v\\u011bt\\u0161inou lemov\\u00e1ny prudk\\u00fdmi v\\u00e1pencov\\u00fdmi skalisky s krasov\\u00fdmi jeskyn\\u011bmi. Mo\\u0159e je od v\\u00e1pencov\\u00e9ho p\\u00edsku zbarveno do n\\u00e1dhern\\u00e9ho odst\\u00ednu modr\\u00e9 barvy.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">ZAKYNTHOS<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Ostrov<\\/strong> Zakynthos, kter\\u00fd s v\\u00edce jak 41 000 obyvateli je t\\u0159et\\u00ed nejv\\u011bt\\u0161\\u00ed ostrov v Jonsk\\u00e9m mo\\u0159i, le\\u017e\\u00ed u severoz\\u00e1padn\\u00ed \\u010d\\u00e1sti \\u0159eck\\u00e9 pevniny, vzd\\u00e1len\\u00e9 16 km. Hlavn\\u00edm m\\u011bstem je Zakynthos (kde \\u017eije okolo 16 000 obyvatel), kter\\u00fd je d\\u016fle\\u017eit\\u00fdm p\\u0159\\u00edstavem a v bl\\u00edzkosti m\\u011bsta le\\u017e\\u00ed i leti\\u0161t\\u011b.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Jako<\\/strong> v\\u011bt\\u0161ina I\\u00f3nsk\\u00fdch ostrov\\u016f je hornat\\u00fd. Jeho vrcholy jsou ale ni\\u017e\\u0161\\u00ed ne\\u017e na Lefkad\\u011b (nejvy\\u0161\\u0161\\u00ed m\\u011b\\u0159\\u00ed 758 m) a ve v\\u00fdchodn\\u00ed \\u010d\\u00e1sti p\\u0159eva\\u017euj\\u00ed sp\\u00ed\\u0161e rovinat\\u00e9 plochy. Na ostrov\\u011b \\u017eije vz\\u00e1cn\\u00fd druh \\u017eelv, kter\\u00e9 naleznte vyobrazeny snad v\\u0161ude a na v\\u0161em. P\\u0159ed turisty v\\u0161ak nejsou dostate\\u010dn\\u011b chr\\u00e1n\\u011bn\\u00e9 a hroz\\u00ed jejich vyhynut\\u00ed.<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong>Za <\\/strong>prohl\\u00e9dnut\\u00ed na ostrov\\u011b stoj\\u00ed pl\\u00e1\\u017ee na severu ostrova s n\\u00e1zvem Navagio, kde v\\u00e1s uchv\\u00e1t\\u00ed prudk\\u00e9 sk\\u00e1ly nad zlatav\\u00fdm p\\u00edskem mal\\u00fdch pl\\u00e1\\u017e\\u00ed a pl\\u00e1\\u017ei\\u010dek a opravdu neuv\\u011b\\u0159iteln\\u00e9 odst\\u00edny modr\\u00e9 barvy mo\\u0159e. &nbsp;<\\/p>","fulltext":"","state":1,"catid":"9","created":"2013-12-26 23:35:32","created_by":"683","created_by_alias":"","modified":"2013-12-30 23:01:08","modified_by":"683","checked_out":"683","checked_out_time":"2013-12-30 23:01:01","publish_up":"2013-12-26 23:35:32","publish_down":"0000-00-00 00:00:00","images":"{\\"image_intro\\":\\"\\",\\"float_intro\\":\\"\\",\\"image_intro_alt\\":\\"\\",\\"image_intro_caption\\":\\"\\",\\"image_fulltext\\":\\"\\",\\"float_fulltext\\":\\"\\",\\"image_fulltext_alt\\":\\"\\",\\"image_fulltext_caption\\":\\"\\"}","urls":"{\\"urla\\":false,\\"urlatext\\":\\"\\",\\"targeta\\":\\"\\",\\"urlb\\":false,\\"urlbtext\\":\\"\\",\\"targetb\\":\\"\\",\\"urlc\\":false,\\"urlctext\\":\\"\\",\\"targetc\\":\\"\\"}","attribs":"{\\"show_title\\":\\"\\",\\"link_titles\\":\\"\\",\\"show_tags\\":\\"\\",\\"show_intro\\":\\"\\",\\"info_block_position\\":\\"\\",\\"show_category\\":\\"\\",\\"link_category\\":\\"\\",\\"show_parent_category\\":\\"\\",\\"link_parent_category\\":\\"\\",\\"show_author\\":\\"\\",\\"link_author\\":\\"\\",\\"show_create_date\\":\\"\\",\\"show_modify_date\\":\\"\\",\\"show_publish_date\\":\\"\\",\\"show_item_navigation\\":\\"\\",\\"show_icons\\":\\"\\",\\"show_print_icon\\":\\"\\",\\"show_email_icon\\":\\"\\",\\"show_vote\\":\\"\\",\\"show_hits\\":\\"\\",\\"show_noauth\\":\\"\\",\\"urls_position\\":\\"\\",\\"alternative_readmore\\":\\"\\",\\"article_layout\\":\\"\\",\\"show_publishing_options\\":\\"\\",\\"show_article_options\\":\\"\\",\\"show_urls_images_backend\\":\\"\\",\\"show_urls_images_frontend\\":\\"\\"}","version":9,"ordering":"1","metakey":"","metadesc":"","access":"1","hits":"24","metadata":"{\\"robots\\":\\"\\",\\"author\\":\\"\\",\\"rights\\":\\"\\",\\"xreference\\":\\"\\"}","featured":"0","language":"*","xreference":""}', 0),
 (21, 7, 1, '', '2014-01-03 17:06:31', 683, 1965, '2fd5a7cb123b5c70b4faef6c8ec92e4532fcc3df', '{"id":7,"asset_id":76,"title":"galerie","alias":"galerie","introtext":"<p><a id=\\"mb1\\" class=\\"s5mb\\" title=\\"ImageExample #1:\\" href=\\"http:\\/\\/www.shape5.com\\/demo\\/images\\/multibox1_lrg.jpg\\"> <img class=\\"boxed\\" src=\\"http:\\/\\/www.shape5.com\\/demo\\/images\\/multibox1.jpg\\" alt=\\"\\" \\/> <\\/a><\\/p>\\r\\n<div class=\\"s5_multibox mb2\\">Multiple Image #1. It can support <strong>html<\\/strong>.<\\/div>","fulltext":"","state":1,"catid":"2","created":"2014-01-03 17:06:31","created_by":"683","created_by_alias":"","modified":"","modified_by":null,"checked_out":null,"checked_out_time":null,"publish_up":"2014-01-03 17:06:31","publish_down":"0000-00-00 00:00:00","images":"{\\"image_intro\\":\\"\\",\\"float_intro\\":\\"\\",\\"image_intro_alt\\":\\"\\",\\"image_intro_caption\\":\\"\\",\\"image_fulltext\\":\\"\\",\\"float_fulltext\\":\\"\\",\\"image_fulltext_alt\\":\\"\\",\\"image_fulltext_caption\\":\\"\\"}","urls":"{\\"urla\\":false,\\"urlatext\\":\\"\\",\\"targeta\\":\\"\\",\\"urlb\\":false,\\"urlbtext\\":\\"\\",\\"targetb\\":\\"\\",\\"urlc\\":false,\\"urlctext\\":\\"\\",\\"targetc\\":\\"\\"}","attribs":"{\\"show_title\\":\\"\\",\\"link_titles\\":\\"\\",\\"show_tags\\":\\"\\",\\"show_intro\\":\\"\\",\\"info_block_position\\":\\"\\",\\"show_category\\":\\"\\",\\"link_category\\":\\"\\",\\"show_parent_category\\":\\"\\",\\"link_parent_category\\":\\"\\",\\"show_author\\":\\"\\",\\"link_author\\":\\"\\",\\"show_create_date\\":\\"\\",\\"show_modify_date\\":\\"\\",\\"show_publish_date\\":\\"\\",\\"show_item_navigation\\":\\"\\",\\"show_icons\\":\\"\\",\\"show_print_icon\\":\\"\\",\\"show_email_icon\\":\\"\\",\\"show_vote\\":\\"\\",\\"show_hits\\":\\"\\",\\"show_noauth\\":\\"\\",\\"urls_position\\":\\"\\",\\"alternative_readmore\\":\\"\\",\\"article_layout\\":\\"\\",\\"show_publishing_options\\":\\"\\",\\"show_article_options\\":\\"\\",\\"show_urls_images_backend\\":\\"\\",\\"show_urls_images_frontend\\":\\"\\"}","version":1,"ordering":null,"metakey":"","metadesc":"","access":"1","hits":null,"metadata":"{\\"robots\\":\\"\\",\\"author\\":\\"\\",\\"rights\\":\\"\\",\\"xreference\\":\\"\\"}","featured":"0","language":"*","xreference":""}', 0),
-(22, 7, 1, '', '2014-01-03 17:09:18', 683, 2053, 'e2abd65f6f448e29b5a9769ae5b850f103b12467', '{"id":7,"asset_id":"76","title":"galerie","alias":"galerie","introtext":"<p><a id=\\"mb1\\" class=\\"s5mb\\" title=\\"ImageExample #1:\\" href=\\"http:\\/\\/www.shape5.com\\/demo\\/images\\/multibox1_lrg.jpg\\"> <img class=\\"boxed\\" src=\\"http:\\/\\/www.shape5.com\\/demo\\/images\\/multibox1.jpg\\" alt=\\"\\" \\/> <\\/a><\\/p>\\r\\n<div class=\\"s5_multibox mb2\\">Multiple Image #1. It can support <strong>html<\\/strong>.<\\/div>\\r\\n<p>bslvkaslvsakjflsak fsa;flsa fsa kjfsaf<\\/p>","fulltext":"","state":1,"catid":"2","created":"2014-01-03 17:06:31","created_by":"683","created_by_alias":"","modified":"2014-01-03 17:09:18","modified_by":"683","checked_out":"683","checked_out_time":"2014-01-03 17:08:59","publish_up":"2014-01-03 17:06:31","publish_down":"0000-00-00 00:00:00","images":"{\\"image_intro\\":\\"\\",\\"float_intro\\":\\"\\",\\"image_intro_alt\\":\\"\\",\\"image_intro_caption\\":\\"\\",\\"image_fulltext\\":\\"\\",\\"float_fulltext\\":\\"\\",\\"image_fulltext_alt\\":\\"\\",\\"image_fulltext_caption\\":\\"\\"}","urls":"{\\"urla\\":false,\\"urlatext\\":\\"\\",\\"targeta\\":\\"\\",\\"urlb\\":false,\\"urlbtext\\":\\"\\",\\"targetb\\":\\"\\",\\"urlc\\":false,\\"urlctext\\":\\"\\",\\"targetc\\":\\"\\"}","attribs":"{\\"show_title\\":\\"\\",\\"link_titles\\":\\"\\",\\"show_tags\\":\\"\\",\\"show_intro\\":\\"\\",\\"info_block_position\\":\\"\\",\\"show_category\\":\\"\\",\\"link_category\\":\\"\\",\\"show_parent_category\\":\\"\\",\\"link_parent_category\\":\\"\\",\\"show_author\\":\\"\\",\\"link_author\\":\\"\\",\\"show_create_date\\":\\"\\",\\"show_modify_date\\":\\"\\",\\"show_publish_date\\":\\"\\",\\"show_item_navigation\\":\\"\\",\\"show_icons\\":\\"\\",\\"show_print_icon\\":\\"\\",\\"show_email_icon\\":\\"\\",\\"show_vote\\":\\"\\",\\"show_hits\\":\\"\\",\\"show_noauth\\":\\"\\",\\"urls_position\\":\\"\\",\\"alternative_readmore\\":\\"\\",\\"article_layout\\":\\"\\",\\"show_publishing_options\\":\\"\\",\\"show_article_options\\":\\"\\",\\"show_urls_images_backend\\":\\"\\",\\"show_urls_images_frontend\\":\\"\\"}","version":2,"ordering":"0","metakey":"","metadesc":"","access":"1","hits":"1","metadata":"{\\"robots\\":\\"\\",\\"author\\":\\"\\",\\"rights\\":\\"\\",\\"xreference\\":\\"\\"}","featured":"0","language":"*","xreference":""}', 0);
+(22, 7, 1, '', '2014-01-03 17:09:18', 683, 2053, 'e2abd65f6f448e29b5a9769ae5b850f103b12467', '{"id":7,"asset_id":"76","title":"galerie","alias":"galerie","introtext":"<p><a id=\\"mb1\\" class=\\"s5mb\\" title=\\"ImageExample #1:\\" href=\\"http:\\/\\/www.shape5.com\\/demo\\/images\\/multibox1_lrg.jpg\\"> <img class=\\"boxed\\" src=\\"http:\\/\\/www.shape5.com\\/demo\\/images\\/multibox1.jpg\\" alt=\\"\\" \\/> <\\/a><\\/p>\\r\\n<div class=\\"s5_multibox mb2\\">Multiple Image #1. It can support <strong>html<\\/strong>.<\\/div>\\r\\n<p>bslvkaslvsakjflsak fsa;flsa fsa kjfsaf<\\/p>","fulltext":"","state":1,"catid":"2","created":"2014-01-03 17:06:31","created_by":"683","created_by_alias":"","modified":"2014-01-03 17:09:18","modified_by":"683","checked_out":"683","checked_out_time":"2014-01-03 17:08:59","publish_up":"2014-01-03 17:06:31","publish_down":"0000-00-00 00:00:00","images":"{\\"image_intro\\":\\"\\",\\"float_intro\\":\\"\\",\\"image_intro_alt\\":\\"\\",\\"image_intro_caption\\":\\"\\",\\"image_fulltext\\":\\"\\",\\"float_fulltext\\":\\"\\",\\"image_fulltext_alt\\":\\"\\",\\"image_fulltext_caption\\":\\"\\"}","urls":"{\\"urla\\":false,\\"urlatext\\":\\"\\",\\"targeta\\":\\"\\",\\"urlb\\":false,\\"urlbtext\\":\\"\\",\\"targetb\\":\\"\\",\\"urlc\\":false,\\"urlctext\\":\\"\\",\\"targetc\\":\\"\\"}","attribs":"{\\"show_title\\":\\"\\",\\"link_titles\\":\\"\\",\\"show_tags\\":\\"\\",\\"show_intro\\":\\"\\",\\"info_block_position\\":\\"\\",\\"show_category\\":\\"\\",\\"link_category\\":\\"\\",\\"show_parent_category\\":\\"\\",\\"link_parent_category\\":\\"\\",\\"show_author\\":\\"\\",\\"link_author\\":\\"\\",\\"show_create_date\\":\\"\\",\\"show_modify_date\\":\\"\\",\\"show_publish_date\\":\\"\\",\\"show_item_navigation\\":\\"\\",\\"show_icons\\":\\"\\",\\"show_print_icon\\":\\"\\",\\"show_email_icon\\":\\"\\",\\"show_vote\\":\\"\\",\\"show_hits\\":\\"\\",\\"show_noauth\\":\\"\\",\\"urls_position\\":\\"\\",\\"alternative_readmore\\":\\"\\",\\"article_layout\\":\\"\\",\\"show_publishing_options\\":\\"\\",\\"show_article_options\\":\\"\\",\\"show_urls_images_backend\\":\\"\\",\\"show_urls_images_frontend\\":\\"\\"}","version":2,"ordering":"0","metakey":"","metadesc":"","access":"1","hits":"1","metadata":"{\\"robots\\":\\"\\",\\"author\\":\\"\\",\\"rights\\":\\"\\",\\"xreference\\":\\"\\"}","featured":"0","language":"*","xreference":""}', 0),
+(23, 5, 1, '', '2014-01-03 21:56:37', 683, 5713, '44ac47229c028ee81be79db0f4616b6c0fb3d817', '{"id":5,"asset_id":"72","title":"NA\\u0160E POS\\u00c1DKA","alias":"nase-posadka","introtext":"<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; text-align: justify; color: #000080;\\">\\u0158\\u00edk\\u00e1 se, \\u017ee ka\\u017ed\\u00e9 zbo\\u017e\\u00ed m\\u00e1 sv\\u00e9ho kupce. Ch\\u00e1peme ty, pro n\\u011b\\u017e je ide\\u00e1ln\\u00ed dovolen\\u00e1 u baz\\u00e9nu v hotelu, samoz\\u0159ejm\\u011b all inclusive. Rozum\\u00edme i t\\u011bm, kte\\u0159\\u00ed si sbal\\u00ed sv\\u00fdch p\\u00e1r \\u0161vestek a vydaj\\u00ed se do sv\\u011bta po sv\\u00fdch. Jestli ale mezi n\\u011b nepat\\u0159\\u00edte a hled\\u00e1te tak trochu akci a p\\u0159itom pot\\u0159ebujete opravdu relaxovat, vyplujte s n\\u00e1mi na mo\\u0159e! Jedin\\u011b z paluby pozn\\u00e1te m\\u00edsta, kam se suchou noho nelze dostat a kter\\u00e1 v sob\\u011b skr\\u00fdvaj\\u00ed neuv\\u011b\\u0159itelnou s\\u00edlu. Na palub\\u011b toti\\u017e nen\\u00ed \\u017e\\u00e1dn\\u00fd den stejn\\u00fd!<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">Mus\\u00edme v\\u00e1s ale upozornit, \\u017ee prvn\\u00ed vyplut\\u00ed m\\u016f\\u017ee b\\u00fdt (a ve v\\u011bt\\u0161in\\u011b p\\u0159\\u00edpad\\u016f opravdu je) prvn\\u00edm krokem k z\\u00e1vislosti. Potkalo to celou na\\u0161i pos\\u00e1dku. Jsme parta \\u2026 &nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">...<br \\/><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">Je to zkr\\u00e1tka nepopsateln\\u00fd pocit. Pocit svobody a souzn\\u011bn\\u00ed s p\\u0159\\u00edrodou. R\\u00e1di o tom p\\u0159esv\\u011bd\\u010d\\u00edme i v\\u00e1s. Katamar\\u00e1n je pro plavbu s d\\u011btmi jako&nbsp;<\\/span><span style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\">stvo\\u0159en\\u00fd, proto\\u017ee oproti plachetnici je na mo\\u0159i mnohem stabiln\\u011bj\\u0161\\u00ed.<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>Nab\\u00edz\\u00edme v\\u00e1m rodinou dovolenou na m\\u00edru! Vyberte si destinaci a ostatn\\u00ed nechte na n\\u00e1s. Zajist\\u00edme pro v\\u00e1s:<\\/strong><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong style=\\"font-size: 0.8em;\\">* <\\/strong>Lo\\u010f dle vlastn\\u00edho v\\u00fdb\\u011bru<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>* <\\/strong>Letenky do vybran\\u00e9 destinace<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">* Transfer z leti\\u0161t\\u011b a zp\\u011bt<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">* Dopravu do mariny a zp\\u011bt<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">* Ubytov\\u00e1n\\u00ed v p\\u0159ed plavbou \\u010di po jej\\u00edm skon\\u010den\\u00ed<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">* Zku\\u0161en\\u00e9ho kapit\\u00e1na<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">&nbsp;<\\/span><\\/p>","fulltext":"","state":1,"catid":"2","created":"2013-12-30 22:58:32","created_by":"683","created_by_alias":"","modified":"2014-01-03 21:56:37","modified_by":"683","checked_out":"683","checked_out_time":"2014-01-03 21:53:08","publish_up":"2013-12-30 22:58:32","publish_down":"0000-00-00 00:00:00","images":"{\\"image_intro\\":\\"\\",\\"float_intro\\":\\"\\",\\"image_intro_alt\\":\\"\\",\\"image_intro_caption\\":\\"\\",\\"image_fulltext\\":\\"\\",\\"float_fulltext\\":\\"\\",\\"image_fulltext_alt\\":\\"\\",\\"image_fulltext_caption\\":\\"\\"}","urls":"{\\"urla\\":false,\\"urlatext\\":\\"\\",\\"targeta\\":\\"\\",\\"urlb\\":false,\\"urlbtext\\":\\"\\",\\"targetb\\":\\"\\",\\"urlc\\":false,\\"urlctext\\":\\"\\",\\"targetc\\":\\"\\"}","attribs":"{\\"show_title\\":\\"\\",\\"link_titles\\":\\"\\",\\"show_tags\\":\\"\\",\\"show_intro\\":\\"\\",\\"info_block_position\\":\\"\\",\\"show_category\\":\\"\\",\\"link_category\\":\\"\\",\\"show_parent_category\\":\\"\\",\\"link_parent_category\\":\\"\\",\\"show_author\\":\\"\\",\\"link_author\\":\\"\\",\\"show_create_date\\":\\"\\",\\"show_modify_date\\":\\"\\",\\"show_publish_date\\":\\"\\",\\"show_item_navigation\\":\\"\\",\\"show_icons\\":\\"\\",\\"show_print_icon\\":\\"\\",\\"show_email_icon\\":\\"\\",\\"show_vote\\":\\"\\",\\"show_hits\\":\\"\\",\\"show_noauth\\":\\"\\",\\"urls_position\\":\\"\\",\\"alternative_readmore\\":\\"\\",\\"article_layout\\":\\"\\",\\"show_publishing_options\\":\\"\\",\\"show_article_options\\":\\"\\",\\"show_urls_images_backend\\":\\"\\",\\"show_urls_images_frontend\\":\\"\\"}","version":3,"ordering":"1","metakey":"","metadesc":"","access":"1","hits":"0","metadata":"{\\"robots\\":\\"\\",\\"author\\":\\"\\",\\"rights\\":\\"\\",\\"xreference\\":\\"\\"}","featured":"1","language":"cs-CZ","xreference":""}', 0),
+(24, 5, 1, '', '2014-01-03 22:00:52', 683, 5966, '0dcab0143719506dc14cc0d0efd09901f58b012d', '{"id":5,"asset_id":"72","title":"NA\\u0160E POS\\u00c1DKA","alias":"nase-posadka","introtext":"<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; text-align: justify; color: #000080;\\">\\u0158\\u00edk\\u00e1 se, \\u017ee ka\\u017ed\\u00e9 zbo\\u017e\\u00ed m\\u00e1 sv\\u00e9ho kupce. Ch\\u00e1peme ty, pro n\\u011b\\u017e je ide\\u00e1ln\\u00ed dovolen\\u00e1 u baz\\u00e9nu v hotelu, samoz\\u0159ejm\\u011b all inclusive. Rozum\\u00edme i t\\u011bm, kte\\u0159\\u00ed si sbal\\u00ed sv\\u00fdch p\\u00e1r \\u0161vestek a vydaj\\u00ed se do sv\\u011bta po sv\\u00fdch. Jestli ale mezi n\\u011b nepat\\u0159\\u00edte a hled\\u00e1te tak trochu akci a p\\u0159itom pot\\u0159ebujete opravdu relaxovat, vyplujte s n\\u00e1mi na mo\\u0159e! Jedin\\u011b z paluby pozn\\u00e1te m\\u00edsta, kam se suchou noho nelze dostat, &nbsp;a kter\\u00e1 v sob\\u011b skr\\u00fdvaj\\u00ed neuv\\u011b\\u0159itelnou s\\u00edlu. Na palub\\u011b toti\\u017e nen\\u00ed \\u017e\\u00e1dn\\u00fd den stejn\\u00fd!<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">Mus\\u00edme v\\u00e1s ale upozornit, \\u017ee prvn\\u00ed vyplut\\u00ed m\\u016f\\u017ee b\\u00fdt (a ve v\\u011bt\\u0161in\\u011b p\\u0159\\u00edpad\\u016f opravdu je) prvn\\u00edm krokem k z\\u00e1vislosti. Potkalo to celou na\\u0161i pos\\u00e1dku. Jsme parta \\u2026 &nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">...<br \\/><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">Je to zkr\\u00e1tka nepopsateln\\u00fd pocit. Pocit svobody a souzn\\u011bn\\u00ed s p\\u0159\\u00edrodou. R\\u00e1di o tom p\\u0159esv\\u011bd\\u010d\\u00edme. Vezm\\u011bte celou rodinu na skv\\u011blou dovolenou na katamar\\u00e1n. Pro plavbu s d\\u011btmi jako&nbsp;<\\/span><span style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\">stvo\\u0159en\\u00fd, proto\\u017ee oproti plachetnici je na mo\\u0159i mnohem stabiln\\u011bj\\u0161\\u00ed.<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>Nab\\u00edz\\u00edme v\\u00e1m rodinou dovolenou na m\\u00edru! Vyberte si destinaci a ostatn\\u00ed nechte na n\\u00e1s. Zajist\\u00edme pro v\\u00e1s:<\\/strong><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\">*<\\/strong><span style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\"> <\\/span><span style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\">Lo\\u010f dle vlastn\\u00edho v\\u00fdb\\u011bru<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Letenky do vybran\\u00e9 destinace<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Transfer z leti\\u0161t\\u011b a zp\\u011bt<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Dopravu do mariny a zp\\u011bt<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Ubytov\\u00e1n\\u00ed v p\\u0159ed plavbou \\u010di po jej\\u00edm skon\\u010den\\u00ed<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>* <\\/strong>Zku\\u0161en\\u00e9ho kapit\\u00e1na<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">&nbsp;<\\/span><\\/p>","fulltext":"","state":1,"catid":"2","created":"2013-12-30 22:58:32","created_by":"683","created_by_alias":"","modified":"2014-01-03 22:00:52","modified_by":"683","checked_out":"683","checked_out_time":"2014-01-03 21:56:37","publish_up":"2013-12-30 22:58:32","publish_down":"0000-00-00 00:00:00","images":"{\\"image_intro\\":\\"\\",\\"float_intro\\":\\"\\",\\"image_intro_alt\\":\\"\\",\\"image_intro_caption\\":\\"\\",\\"image_fulltext\\":\\"\\",\\"float_fulltext\\":\\"\\",\\"image_fulltext_alt\\":\\"\\",\\"image_fulltext_caption\\":\\"\\"}","urls":"{\\"urla\\":false,\\"urlatext\\":\\"\\",\\"targeta\\":\\"\\",\\"urlb\\":false,\\"urlbtext\\":\\"\\",\\"targetb\\":\\"\\",\\"urlc\\":false,\\"urlctext\\":\\"\\",\\"targetc\\":\\"\\"}","attribs":"{\\"show_title\\":\\"\\",\\"link_titles\\":\\"\\",\\"show_tags\\":\\"\\",\\"show_intro\\":\\"\\",\\"info_block_position\\":\\"\\",\\"show_category\\":\\"\\",\\"link_category\\":\\"\\",\\"show_parent_category\\":\\"\\",\\"link_parent_category\\":\\"\\",\\"show_author\\":\\"\\",\\"link_author\\":\\"\\",\\"show_create_date\\":\\"\\",\\"show_modify_date\\":\\"\\",\\"show_publish_date\\":\\"\\",\\"show_item_navigation\\":\\"\\",\\"show_icons\\":\\"\\",\\"show_print_icon\\":\\"\\",\\"show_email_icon\\":\\"\\",\\"show_vote\\":\\"\\",\\"show_hits\\":\\"\\",\\"show_noauth\\":\\"\\",\\"urls_position\\":\\"\\",\\"alternative_readmore\\":\\"\\",\\"article_layout\\":\\"\\",\\"show_publishing_options\\":\\"\\",\\"show_article_options\\":\\"\\",\\"show_urls_images_backend\\":\\"\\",\\"show_urls_images_frontend\\":\\"\\"}","version":4,"ordering":"1","metakey":"","metadesc":"","access":"1","hits":"0","metadata":"{\\"robots\\":\\"\\",\\"author\\":\\"\\",\\"rights\\":\\"\\",\\"xreference\\":\\"\\"}","featured":"1","language":"cs-CZ","xreference":""}', 0),
+(25, 5, 1, '', '2014-01-03 22:16:33', 683, 6115, 'c674646c6a4809424a1ddd0912aa97b8c80225a5', '{"id":5,"asset_id":"72","title":"NA\\u0160E POS\\u00c1DKA","alias":"nase-posadka","introtext":"<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; text-align: justify; color: #000080;\\">\\u0158\\u00edk\\u00e1 se, \\u017ee ka\\u017ed\\u00e9 zbo\\u017e\\u00ed m\\u00e1 sv\\u00e9ho kupce. Ch\\u00e1peme ty, pro n\\u011b\\u017e je ide\\u00e1ln\\u00ed dovolen\\u00e1 u baz\\u00e9nu v hotelu, samoz\\u0159ejm\\u011b all inclusive. Rozum\\u00edme i t\\u011bm, kte\\u0159\\u00ed si sbal\\u00ed sv\\u00fdch p\\u00e1r \\u0161vestek a vydaj\\u00ed se do sv\\u011bta po sv\\u00fdch. Jestli ale mezi n\\u011b nepat\\u0159\\u00edte a hled\\u00e1te tak trochu akci a p\\u0159itom pot\\u0159ebujete opravdu relaxovat, vyplujte s n\\u00e1mi na mo\\u0159e! Jedin\\u011b z paluby pozn\\u00e1te m\\u00edsta, kam se suchou noho nelze dostat, &nbsp;a kter\\u00e1 v sob\\u011b skr\\u00fdvaj\\u00ed neuv\\u011b\\u0159itelnou s\\u00edlu a kr\\u00e1su.&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">Mus\\u00edme v\\u00e1s ale upozornit, \\u017ee prvn\\u00ed vyplut\\u00ed m\\u016f\\u017ee b\\u00fdt (a ve v\\u011bt\\u0161in\\u011b p\\u0159\\u00edpad\\u016f opravdu je) prvn\\u00edm krokem k z\\u00e1vislosti. Potkalo to celou na\\u0161i pos\\u00e1dku. Jsme parta \\u2026 &nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">...<br \\/><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">Je to zkr\\u00e1tka nepopsateln\\u00fd pocit. Pocit svobody a souzn\\u011bn\\u00ed s p\\u0159\\u00edrodou. R\\u00e1di o tom p\\u0159esv\\u011bd\\u010d\\u00edme. Vezm\\u011bte celou rodinu na skv\\u011blou dovolenou na katamar\\u00e1n. Pro plavbu s d\\u011btmi jako&nbsp;<\\/span><span style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\">stvo\\u0159en\\u00fd, proto\\u017ee oproti plachetnici je na mo\\u0159i mnohem stabiln\\u011bj\\u0161\\u00ed. A nudit se ur\\u010dit\\u011b nebudete - n<span style=\\"color: #000080; font-family: verdana, geneva; text-align: justify;\\">a palub\\u011b toti\\u017e nen\\u00ed \\u017e\\u00e1dn\\u00fd den stejn\\u00fd!<\\/span><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>Nab\\u00edz\\u00edme v\\u00e1m rodinou dovolenou na m\\u00edru! Vyberte si destinaci a ostatn\\u00ed nechte na n\\u00e1s. Zajist\\u00edme pro v\\u00e1s:<\\/strong><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\">*<\\/strong><span style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\"> <\\/span><span style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\">Lo\\u010f dle vlastn\\u00edho v\\u00fdb\\u011bru<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Letenky do vybran\\u00e9 destinace<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Transfer z leti\\u0161t\\u011b a zp\\u011bt<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Dopravu do mariny a zp\\u011bt<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Ubytov\\u00e1n\\u00ed v p\\u0159ed plavbou \\u010di po jej\\u00edm skon\\u010den\\u00ed<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>* <\\/strong>Zku\\u0161en\\u00e9ho kapit\\u00e1na<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">&nbsp;<\\/span><\\/p>","fulltext":"","state":1,"catid":"2","created":"2013-12-30 22:58:32","created_by":"683","created_by_alias":"","modified":"2014-01-03 22:16:33","modified_by":"683","checked_out":"683","checked_out_time":"2014-01-03 22:15:25","publish_up":"2013-12-30 22:58:32","publish_down":"0000-00-00 00:00:00","images":"{\\"image_intro\\":\\"\\",\\"float_intro\\":\\"\\",\\"image_intro_alt\\":\\"\\",\\"image_intro_caption\\":\\"\\",\\"image_fulltext\\":\\"\\",\\"float_fulltext\\":\\"\\",\\"image_fulltext_alt\\":\\"\\",\\"image_fulltext_caption\\":\\"\\"}","urls":"{\\"urla\\":false,\\"urlatext\\":\\"\\",\\"targeta\\":\\"\\",\\"urlb\\":false,\\"urlbtext\\":\\"\\",\\"targetb\\":\\"\\",\\"urlc\\":false,\\"urlctext\\":\\"\\",\\"targetc\\":\\"\\"}","attribs":"{\\"show_title\\":\\"\\",\\"link_titles\\":\\"\\",\\"show_tags\\":\\"\\",\\"show_intro\\":\\"\\",\\"info_block_position\\":\\"\\",\\"show_category\\":\\"\\",\\"link_category\\":\\"\\",\\"show_parent_category\\":\\"\\",\\"link_parent_category\\":\\"\\",\\"show_author\\":\\"\\",\\"link_author\\":\\"\\",\\"show_create_date\\":\\"\\",\\"show_modify_date\\":\\"\\",\\"show_publish_date\\":\\"\\",\\"show_item_navigation\\":\\"\\",\\"show_icons\\":\\"\\",\\"show_print_icon\\":\\"\\",\\"show_email_icon\\":\\"\\",\\"show_vote\\":\\"\\",\\"show_hits\\":\\"\\",\\"show_noauth\\":\\"\\",\\"urls_position\\":\\"\\",\\"alternative_readmore\\":\\"\\",\\"article_layout\\":\\"\\",\\"show_publishing_options\\":\\"\\",\\"show_article_options\\":\\"\\",\\"show_urls_images_backend\\":\\"\\",\\"show_urls_images_frontend\\":\\"\\"}","version":9,"ordering":"1","metakey":"","metadesc":"","access":"1","hits":"0","metadata":"{\\"robots\\":\\"\\",\\"author\\":\\"\\",\\"rights\\":\\"\\",\\"xreference\\":\\"\\"}","featured":"1","language":"cs-CZ","xreference":""}', 0);
+INSERT INTO `fb_ucm_history` (`version_id`, `ucm_item_id`, `ucm_type_id`, `version_note`, `save_date`, `editor_user_id`, `character_count`, `sha1_hash`, `version_data`, `keep_forever`) VALUES
+(26, 5, 1, '', '2014-01-03 22:17:43', 683, 6155, '76437b1fcc25e0063a44cf13daaf781f47874525', '{"id":5,"asset_id":"72","title":"NA\\u0160E POS\\u00c1DKA","alias":"nase-posadka","introtext":"<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; text-align: justify; color: #000080;\\">\\u0158\\u00edk\\u00e1 se, \\u017ee ka\\u017ed\\u00e9 zbo\\u017e\\u00ed m\\u00e1 sv\\u00e9ho kupce. Ch\\u00e1peme ty, pro n\\u011b\\u017e je ide\\u00e1ln\\u00ed dovolen\\u00e1 u baz\\u00e9nu v hotelu, samoz\\u0159ejm\\u011b all inclusive. Rozum\\u00edme i t\\u011bm, kte\\u0159\\u00ed si sbal\\u00ed sv\\u00fdch p\\u00e1r \\u0161vestek a vydaj\\u00ed se do sv\\u011bta po sv\\u00fdch. Jestli ale mezi n\\u011b nepat\\u0159\\u00edte a hled\\u00e1te tak trochu akci a p\\u0159itom pot\\u0159ebujete opravdu relaxovat, vyplujte s n\\u00e1mi na mo\\u0159e! Jedin\\u011b z paluby pozn\\u00e1te m\\u00edsta, kam se suchou nohou nelze dostat, &nbsp;a kter\\u00e1 v sob\\u011b skr\\u00fdvaj\\u00ed neuv\\u011b\\u0159itelnou s\\u00edlu a kr\\u00e1su.&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">Mus\\u00edme v\\u00e1s ale upozornit, \\u017ee prvn\\u00ed vyplut\\u00ed m\\u016f\\u017ee b\\u00fdt (a ve v\\u011bt\\u0161in\\u011b p\\u0159\\u00edpad\\u016f opravdu je) prvn\\u00edm krokem k z\\u00e1vislosti. Potkalo to celou na\\u0161i pos\\u00e1dku. Jsme parta \\u2026 &nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">...<br \\/><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">Je to zkr\\u00e1tka nepopsateln\\u00fd pocit. Pocit svobody a souzn\\u011bn\\u00ed s p\\u0159\\u00edrodou. R\\u00e1di v\\u00e1s o tom p\\u0159esv\\u011bd\\u010d\\u00edme. Nalo\\u010fte se s n\\u00e1mi, vezm\\u011bte celou rodinu na skv\\u011blou dovolenou na katamar\\u00e1n! Pro plavbu s d\\u011btmi jako&nbsp;<\\/span><span style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\">stvo\\u0159en\\u00fd, proto\\u017ee oproti plachetnici je na mo\\u0159i mnohem stabiln\\u011bj\\u0161\\u00ed. A nudit se ur\\u010dit\\u011b nebudete - n<span style=\\"color: #000080; font-family: verdana, geneva; text-align: justify;\\">a palub\\u011b toti\\u017e nen\\u00ed \\u017e\\u00e1dn\\u00fd den stejn\\u00fd!<\\/span><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm; text-align: justify;\\"><span style=\\"color: #000080;\\">&nbsp;<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>Nab\\u00edz\\u00edme v\\u00e1m rodinou dovolenou na m\\u00edru! Vyberte si destinaci a ostatn\\u00ed nechte na n\\u00e1s. Zajist\\u00edme pro v\\u00e1s:<\\/strong><\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><strong style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\">*<\\/strong><span style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\"> <\\/span><span style=\\"color: #000080; font-family: verdana, geneva; font-size: 10pt;\\">Lo\\u010f dle vlastn\\u00edho v\\u00fdb\\u011bru<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Letenky do vybran\\u00e9 destinace<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Transfer z leti\\u0161t\\u011b a zp\\u011bt<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Dopravu do mariny a zp\\u011bt<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>*<\\/strong> Ubytov\\u00e1n\\u00ed v p\\u0159ed plavbou \\u010di po jej\\u00edm skon\\u010den\\u00ed<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\"><strong>* <\\/strong>Zku\\u0161en\\u00e9ho kapit\\u00e1na<\\/span><\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\">&nbsp;<\\/p>\\r\\n<p style=\\"margin-bottom: 0cm;\\"><span style=\\"font-family: verdana, geneva; font-size: 10pt; color: #000080;\\">&nbsp;<\\/span><\\/p>","fulltext":"","state":1,"catid":"2","created":"2013-12-30 22:58:32","created_by":"683","created_by_alias":"","modified":"2014-01-03 22:17:43","modified_by":"683","checked_out":"683","checked_out_time":"2014-01-03 22:16:50","publish_up":"2013-12-30 22:58:32","publish_down":"0000-00-00 00:00:00","images":"{\\"image_intro\\":\\"\\",\\"float_intro\\":\\"\\",\\"image_intro_alt\\":\\"\\",\\"image_intro_caption\\":\\"\\",\\"image_fulltext\\":\\"\\",\\"float_fulltext\\":\\"\\",\\"image_fulltext_alt\\":\\"\\",\\"image_fulltext_caption\\":\\"\\"}","urls":"{\\"urla\\":false,\\"urlatext\\":\\"\\",\\"targeta\\":\\"\\",\\"urlb\\":false,\\"urlbtext\\":\\"\\",\\"targetb\\":\\"\\",\\"urlc\\":false,\\"urlctext\\":\\"\\",\\"targetc\\":\\"\\"}","attribs":"{\\"show_title\\":\\"\\",\\"link_titles\\":\\"\\",\\"show_tags\\":\\"\\",\\"show_intro\\":\\"\\",\\"info_block_position\\":\\"\\",\\"show_category\\":\\"\\",\\"link_category\\":\\"\\",\\"show_parent_category\\":\\"\\",\\"link_parent_category\\":\\"\\",\\"show_author\\":\\"\\",\\"link_author\\":\\"\\",\\"show_create_date\\":\\"\\",\\"show_modify_date\\":\\"\\",\\"show_publish_date\\":\\"\\",\\"show_item_navigation\\":\\"\\",\\"show_icons\\":\\"\\",\\"show_print_icon\\":\\"\\",\\"show_email_icon\\":\\"\\",\\"show_vote\\":\\"\\",\\"show_hits\\":\\"\\",\\"show_noauth\\":\\"\\",\\"urls_position\\":\\"\\",\\"alternative_readmore\\":\\"\\",\\"article_layout\\":\\"\\",\\"show_publishing_options\\":\\"\\",\\"show_article_options\\":\\"\\",\\"show_urls_images_backend\\":\\"\\",\\"show_urls_images_frontend\\":\\"\\"}","version":10,"ordering":"1","metakey":"","metadesc":"","access":"1","hits":"0","metadata":"{\\"robots\\":\\"\\",\\"author\\":\\"\\",\\"rights\\":\\"\\",\\"xreference\\":\\"\\"}","featured":"1","language":"cs-CZ","xreference":""}', 0);
 
 -- --------------------------------------------------------
 
 --
 -- Struktura tabulky `fb_updates`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_updates` (
@@ -2864,71 +3013,19 @@ CREATE TABLE IF NOT EXISTS `fb_updates` (
   `detailsurl` text NOT NULL,
   `infourl` text NOT NULL,
   PRIMARY KEY (`update_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='Available Updates' AUTO_INCREMENT=49 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Available Updates' AUTO_INCREMENT=1 ;
 
 --
 -- Vyprázdnit tabulku před vkládáním `fb_updates`
 --
 
 TRUNCATE TABLE `fb_updates`;
---
--- Vypisuji data pro tabulku `fb_updates`
---
-
-INSERT INTO `fb_updates` (`update_id`, `update_site_id`, `extension_id`, `name`, `description`, `element`, `type`, `folder`, `client_id`, `version`, `data`, `detailsurl`, `infourl`) VALUES
-(1, 3, 0, 'Malay', '', 'pkg_ms-MY', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/ms-MY_details.xml', ''),
-(2, 3, 0, 'Romanian', '', 'pkg_ro-RO', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/ro-RO_details.xml', ''),
-(3, 3, 0, 'Flemish', '', 'pkg_nl-BE', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/nl-BE_details.xml', ''),
-(4, 3, 0, 'Chinese Traditional', '', 'pkg_zh-TW', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/zh-TW_details.xml', ''),
-(5, 3, 0, 'French', '', 'pkg_fr-FR', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/fr-FR_details.xml', ''),
-(6, 3, 0, 'German', '', 'pkg_de-DE', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/de-DE_details.xml', ''),
-(7, 3, 0, 'Greek', '', 'pkg_el-GR', 'package', '', 0, '3.2.0.1', '', 'http://update.joomla.org/language/details3/el-GR_details.xml', ''),
-(8, 3, 0, 'Japanese', '', 'pkg_ja-JP', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/ja-JP_details.xml', ''),
-(9, 3, 0, 'Hebrew', '', 'pkg_he-IL', 'package', '', 0, '3.1.1.1', '', 'http://update.joomla.org/language/details3/he-IL_details.xml', ''),
-(10, 3, 0, 'Hungarian', '', 'pkg_hu-HU', 'package', '', 0, '3.2.0.1', '', 'http://update.joomla.org/language/details3/hu-HU_details.xml', ''),
-(11, 3, 0, 'Afrikaans', '', 'pkg_af-ZA', 'package', '', 0, '3.2.0.1', '', 'http://update.joomla.org/language/details3/af-ZA_details.xml', ''),
-(12, 3, 0, 'Arabic Unitag', '', 'pkg_ar-AA', 'package', '', 0, '3.2.1.2', '', 'http://update.joomla.org/language/details3/ar-AA_details.xml', ''),
-(13, 3, 0, 'Belarusian', '', 'pkg_be-BY', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/be-BY_details.xml', ''),
-(14, 3, 0, 'Bulgarian', '', 'pkg_bg-BG', 'package', '', 0, '3.0.3.1', '', 'http://update.joomla.org/language/details3/bg-BG_details.xml', ''),
-(15, 3, 0, 'Catalan', '', 'pkg_ca-ES', 'package', '', 0, '3.2.0.1', '', 'http://update.joomla.org/language/details3/ca-ES_details.xml', ''),
-(16, 3, 0, 'Chinese Simplified', '', 'pkg_zh-CN', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/zh-CN_details.xml', ''),
-(17, 3, 0, 'Croatian', '', 'pkg_hr-HR', 'package', '', 0, '3.1.5.1', '', 'http://update.joomla.org/language/details3/hr-HR_details.xml', ''),
-(18, 3, 0, 'Danish', '', 'pkg_da-DK', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/da-DK_details.xml', ''),
-(19, 3, 0, 'Dutch', '', 'pkg_nl-NL', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/nl-NL_details.xml', ''),
-(20, 3, 0, 'English AU', '', 'pkg_en-AU', 'package', '', 0, '3.1.0.1', '', 'http://update.joomla.org/language/details3/en-AU_details.xml', ''),
-(21, 3, 0, 'English US', '', 'pkg_en-US', 'package', '', 0, '3.1.0.1', '', 'http://update.joomla.org/language/details3/en-US_details.xml', ''),
-(22, 3, 0, 'Estonian', '', 'pkg_et-EE', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/et-EE_details.xml', ''),
-(23, 3, 0, 'Italian', '', 'pkg_it-IT', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/it-IT_details.xml', ''),
-(24, 3, 0, 'Korean', '', 'pkg_ko-KR', 'package', '', 0, '3.2.1.0', '', 'http://update.joomla.org/language/details3/ko-KR_details.xml', ''),
-(25, 3, 0, 'Latvian', '', 'pkg_lv-LV', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/lv-LV_details.xml', ''),
-(26, 3, 0, 'Macedonian', '', 'pkg_mk-MK', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/mk-MK_details.xml', ''),
-(27, 3, 0, 'Norwegian Bokmal', '', 'pkg_nb-NO', 'package', '', 0, '3.2.0.1', '', 'http://update.joomla.org/language/details3/nb-NO_details.xml', ''),
-(28, 3, 0, 'Persian', '', 'pkg_fa-IR', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/fa-IR_details.xml', ''),
-(29, 3, 0, 'Polish', '', 'pkg_pl-PL', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/pl-PL_details.xml', ''),
-(30, 3, 0, 'Russian', '', 'pkg_ru-RU', 'package', '', 0, '3.2.1.2', '', 'http://update.joomla.org/language/details3/ru-RU_details.xml', ''),
-(31, 3, 0, 'Slovak', '', 'pkg_sk-SK', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/sk-SK_details.xml', ''),
-(32, 3, 0, 'Swedish', '', 'pkg_sv-SE', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/sv-SE_details.xml', ''),
-(33, 3, 0, 'Syriac', '', 'pkg_sy-IQ', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/sy-IQ_details.xml', ''),
-(34, 3, 0, 'Tamil', '', 'pkg_ta-IN', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/ta-IN_details.xml', ''),
-(35, 3, 0, 'Thai', '', 'pkg_th-TH', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/th-TH_details.xml', ''),
-(36, 3, 0, 'Turkish', '', 'pkg_tr-TR', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/tr-TR_details.xml', ''),
-(37, 3, 0, 'Ukrainian', '', 'pkg_uk-UA', 'package', '', 0, '3.2.0.6', '', 'http://update.joomla.org/language/details3/uk-UA_details.xml', ''),
-(38, 3, 0, 'Uyghur', '', 'pkg_ug-CN', 'package', '', 0, '3.2.0.1', '', 'http://update.joomla.org/language/details3/ug-CN_details.xml', ''),
-(39, 3, 0, 'Albanian', '', 'pkg_sq-AL', 'package', '', 0, '3.1.1.1', '', 'http://update.joomla.org/language/details3/sq-AL_details.xml', ''),
-(40, 3, 0, 'Serbian Latin', '', 'pkg_sr-YU', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/sr-YU_details.xml', ''),
-(41, 3, 0, 'Spanish', '', 'pkg_es-ES', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/es-ES_details.xml', ''),
-(42, 3, 0, 'Bosnian', '', 'pkg_bs-BA', 'package', '', 0, '3.2.0.1', '', 'http://update.joomla.org/language/details3/bs-BA_details.xml', ''),
-(43, 3, 0, 'Serbian Cyrillic', '', 'pkg_sr-RS', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/sr-RS_details.xml', ''),
-(44, 3, 0, 'Vietnamese', '', 'pkg_vi-VN', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/vi-VN_details.xml', ''),
-(45, 3, 0, 'Bahasa Indonesia', '', 'pkg_id-ID', 'package', '', 0, '3.1.4.1', '', 'http://update.joomla.org/language/details3/id-ID_details.xml', ''),
-(46, 3, 0, 'Finnish', '', 'pkg_fi-FI', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/fi-FI_details.xml', ''),
-(47, 3, 0, 'Swahili', '', 'pkg_sw-KE', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/sw-KE_details.xml', ''),
-(48, 3, 0, 'Montenegrin', '', 'pkg_srp-ME', 'package', '', 0, '3.2.1.1', '', 'http://update.joomla.org/language/details3/srp-ME_details.xml', '');
-
 -- --------------------------------------------------------
 
 --
 -- Struktura tabulky `fb_update_sites`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_update_sites` (
@@ -2951,18 +3048,20 @@ TRUNCATE TABLE `fb_update_sites`;
 --
 
 INSERT INTO `fb_update_sites` (`update_site_id`, `name`, `type`, `location`, `enabled`, `last_check_timestamp`) VALUES
-(1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/list.xml', 1, 1388764883),
-(2, 'Joomla Extension Directory', 'collection', 'http://update.joomla.org/jed/list.xml', 1, 1388764883),
-(3, 'Accredited Joomla! Translations', 'collection', 'http://update.joomla.org/language/translationlist_3.xml', 1, 1388764883),
-(4, 'Accordeon Menu CK Update', 'extension', 'http://update.joomlack.fr/mod_accordeonck_update.xml', 1, 1388764883),
-(5, 'JCE Editor Updates', 'extension', 'https://www.joomlacontenteditor.net/index.php?option=com_updates&view=update&format=xml&id=1', 1, 1388764883),
-(6, 'JCE Editor Updates', 'extension', 'https://www.joomlacontenteditor.net/index.php?option=com_updates&view=update&format=xml&id=1&file=extension.xml', 1, 1388764883),
-(7, 'WebInstaller Update Site', 'extension', 'http://appscdn.joomla.org/webapps/jedapps/webinstaller.xml', 1, 1388764883);
+(1, 'Joomla Core', 'collection', 'http://update.joomla.org/core/list.xml', 1, 0),
+(2, 'Joomla Extension Directory', 'collection', 'http://update.joomla.org/jed/list.xml', 1, 0),
+(3, 'Accredited Joomla! Translations', 'collection', 'http://update.joomla.org/language/translationlist_3.xml', 1, 0),
+(4, 'Accordeon Menu CK Update', 'extension', 'http://update.joomlack.fr/mod_accordeonck_update.xml', 1, 0),
+(5, 'JCE Editor Updates', 'extension', 'https://www.joomlacontenteditor.net/index.php?option=com_updates&view=update&format=xml&id=1', 1, 0),
+(6, 'JCE Editor Updates', 'extension', 'https://www.joomlacontenteditor.net/index.php?option=com_updates&view=update&format=xml&id=1&file=extension.xml', 1, 0),
+(7, 'WebInstaller Update Site', 'extension', 'http://appscdn.joomla.org/webapps/jedapps/webinstaller.xml', 1, 0);
 
 -- --------------------------------------------------------
 
 --
 -- Struktura tabulky `fb_update_sites_extensions`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_update_sites_extensions` (
@@ -2994,6 +3093,8 @@ INSERT INTO `fb_update_sites_extensions` (`update_site_id`, `extension_id`) VALU
 
 --
 -- Struktura tabulky `fb_usergroups`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_usergroups` (
@@ -3034,6 +3135,8 @@ INSERT INTO `fb_usergroups` (`id`, `parent_id`, `lft`, `rgt`, `title`) VALUES
 --
 -- Struktura tabulky `fb_users`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -3068,12 +3171,14 @@ TRUNCATE TABLE `fb_users`;
 --
 
 INSERT INTO `fb_users` (`id`, `name`, `username`, `email`, `password`, `block`, `sendEmail`, `registerDate`, `lastvisitDate`, `activation`, `params`, `lastResetTime`, `resetCount`, `otpKey`, `otep`) VALUES
-(683, 'Super User', 'admin', 'pepa@familyboat.cz', '$P$DJ4yyJojfdz5kiwHuDlqtHGtCMVMOj1', 0, 1, '2013-12-17 19:16:49', '2014-01-03 19:11:53', '0', '{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}', '0000-00-00 00:00:00', 0, '', '');
+(683, 'Super User', 'admin', 'pepa@familyboat.cz', '$P$DJ4yyJojfdz5kiwHuDlqtHGtCMVMOj1', 0, 1, '2013-12-17 19:16:49', '2014-02-11 17:50:33', '0', '{"admin_style":"","admin_language":"","language":"","editor":"","helpsite":"","timezone":""}', '0000-00-00 00:00:00', 0, '', '');
 
 -- --------------------------------------------------------
 
 --
 -- Struktura tabulky `fb_user_keys`
+--
+-- Vytvořeno: Úte 17. pro 2013, 19:16
 --
 
 CREATE TABLE IF NOT EXISTS `fb_user_keys` (
@@ -3100,6 +3205,8 @@ TRUNCATE TABLE `fb_user_keys`;
 
 --
 -- Struktura tabulky `fb_user_notes`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_user_notes` (
@@ -3133,6 +3240,8 @@ TRUNCATE TABLE `fb_user_notes`;
 --
 -- Struktura tabulky `fb_user_profiles`
 --
+-- Vytvořeno: Stř 11. pro 2013, 21:07
+--
 
 CREATE TABLE IF NOT EXISTS `fb_user_profiles` (
   `user_id` int(11) NOT NULL,
@@ -3151,6 +3260,8 @@ TRUNCATE TABLE `fb_user_profiles`;
 
 --
 -- Struktura tabulky `fb_user_usergroup_map`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_user_usergroup_map` (
@@ -3175,6 +3286,8 @@ INSERT INTO `fb_user_usergroup_map` (`user_id`, `group_id`) VALUES
 
 --
 -- Struktura tabulky `fb_viewlevels`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_viewlevels` (
@@ -3206,6 +3319,8 @@ INSERT INTO `fb_viewlevels` (`id`, `title`, `ordering`, `rules`) VALUES
 
 --
 -- Struktura tabulky `fb_weblinks`
+--
+-- Vytvořeno: Stř 11. pro 2013, 21:07
 --
 
 CREATE TABLE IF NOT EXISTS `fb_weblinks` (
@@ -3257,6 +3372,8 @@ TRUNCATE TABLE `fb_weblinks`;
 
 --
 -- Struktura tabulky `fb_wf_profiles`
+--
+-- Vytvořeno: Úte 17. pro 2013, 19:25
 --
 
 CREATE TABLE IF NOT EXISTS `fb_wf_profiles` (

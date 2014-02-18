@@ -13,3 +13,6 @@
 2013-12-19T19:24:45+00:00	INFO	update	Deleting removed files and folders.
 2013-12-19T19:24:49+00:00	INFO	update	Cleaning up after installation.
 2013-12-19T19:24:49+00:00	INFO	update	Update to version 3.2.1 is complete.
+2014-02-18T20:07:59+00:00	INFO	update	Aktualizaci spustil uživatel Super User (683). Stará verze je 3.2.1.
+2014-02-18T20:07:59+00:00	INFO	update	Stahování aktualizačních souborů z .
+2014-02-18T20:08:38+00:00	INFO	update	Soubor Joomla_3.2.1_to_3.2.2-Stable-Patch_Package.zip byl úspěšně stažen.

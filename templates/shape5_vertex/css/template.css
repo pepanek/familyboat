@@ -408,10 +408,9 @@ a.readmore-link, a.comments-link {
 }
 
 #s5_header_wrap {
-  background: none repeat scroll
-    0px 0px rgb(255, 255, 255);
-  border-radius: 6px 6px 0px
-    0px;
+  background: none repeat scroll 0px 0px rgb(255, 255, 255);
+  border-radius: 6px 6px 0px 0px;
+  padding-bottom: 3px;
 }
 
 #s5_logo {
@@ -526,10 +525,8 @@ a.readmore-link, a.comments-link {
 }
 
 #s5_menu_wrap {
-  background: none repeat scroll
-    0% 0% rgb(0, 0, 128);
-  border-top: 1px solid rgb(34,
-    34, 34);
+  background: none repeat scroll 0% 0% rgb(0, 0, 128);
+  border-top: 1px solid rgb(34, 34, 34);
 }
 
 #s5_search label, #s5_search br, #s5_search button {
@@ -748,14 +745,14 @@ a.readmore-link, a.comments-link {
   min-height: 100% !important;
 }
 .module_round_box_left_menu_outer {
-  margin-left: 5px;
+  margin-left: 0px;
   margin-right: 0px;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .module_round_box_left_menu {
   background: none repeat scroll 0% 0% rgb(255, 255, 255);
-  border: 1px solid rgb(197, 197, 197);
+/*  border: 1px solid rgb(197, 197, 197); */
   padding-top: 0px;
 }
 
@@ -851,7 +848,7 @@ a.readmore-link, a.comments-link {
 }
 
 .module_round_box_left_menu ul.menu li {
-  background: -moz-linear-gradient(center top , rgb(255, 255, 255) 0%, rgb(249, 249, 249) 100%) repeat scroll 0% 0% transparent;
+  background: -moz-linear-gradient(center top , rgb(245, 245, 245) 0%, rgb(255, 255, 255) 100%) repeat scroll 0% 0% transparent;
   padding: 0px;
 }
 
@@ -861,4 +858,9 @@ a.readmore-link, a.comments-link {
 
 .module_round_box_left_menu ul.menu img {
   display: none;
+}
+#s5_top_row2 {
+    box-shadow: 0 0 3px #333333;
+    margin-top: 6px;
+    margin-left: 6px;
 }
